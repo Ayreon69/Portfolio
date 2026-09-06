@@ -1,17 +1,19 @@
 import styles from "./Hero.module.css";
 
 /**
- * HERO — structure validée §08.1, portée telle quelle.
+ * HERO — direction éditoriale typographique (2026-09-07).
  *
- * Test d'acceptation qui a présidé à sa conception : **le Hero doit rester
- * excellent si le système disparaît complètement.** Tout ce qui est ci-dessous
- * est du HTML réel, rendu côté serveur, hors du canvas — sans WebGL, sans JS,
- * sans le halo, le Hero est complet. Le halo n'ajoute qu'une présence.
+ * Remplace la composition « texte à gauche / système 3D à droite » (§08.1) par
+ * une composition centrée de type couverture : label, nom, énoncé, indicateur
+ * de défilement. Le système visuel n'est plus présent dans le HERO — mais
+ * l'infrastructure (`PersistentScene`, `layout-3d.ts`, `LivingInfrastructure`)
+ * reste en place, désactivée par un seul drapeau, pour pouvoir revenir en
+ * arrière sans rien reconstruire.
  *
- * Le halo lui-même vit dans le canvas persistant (components/hero/HeroHalo),
- * décalé dans une zone à droite du nom : le système encadre le nom, il ne le
- * concurrence jamais. Aucune particule décorative n'épelle le nom — le système
- * montré est le système réel.
+ * Le test d'acceptation d'origine tient toujours, et plus strictement encore :
+ * **le HERO est du HTML réel rendu côté serveur.** Sans WebGL, sans JS, sans
+ * CSS d'animation, il est complet et lisible. L'animation d'entrée est purement
+ * CSS, en `both`, donc neutralisée sans perte par `prefers-reduced-motion`.
  */
 export default function Hero() {
   return (
@@ -26,20 +28,23 @@ export default function Hero() {
       </nav>
 
       <div className={styles.identity}>
+        <p className={`mono ${styles.label}`}>
+          01 — Data Scientist · AI Builder · Data
+        </p>
         <h1 id="hero-nom" className={styles.name}>
           Rayan Jemai
         </h1>
-        <p className={styles.quote}>
-          «&nbsp;Je n&apos;aime pas faire deux fois la même chose.&nbsp;»
+        <p className={styles.statement}>
+          Je construis des systèmes qui suppriment le travail répétitif.
         </p>
-        <p className={`mono ${styles.role}`}>Data Scientist · AI Builder · Data</p>
       </div>
 
-      {/* Pointe la section SUIVANTE, pas PROFIL : depuis l'insertion de
-          PHILOSOPHIE, le flux est HERO → PHILOSOPHIE → PROFIL. Seule
-          modification apportée au HERO validé. */}
+      {/* Le flux reste HERO → PHILOSOPHIE → PROFIL : l'indicateur pointe la
+          section suivante, et reste un lien réel pour le clavier et le crawler. */}
       <p className={`mono ${styles.scroll}`}>
-        <a href="#philosophie">[ 01 ] Explorer le système →</a>
+        <a href="#philosophie">
+          Philosophie <span aria-hidden="true">↓</span>
+        </a>
       </p>
     </section>
   );

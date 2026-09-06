@@ -4,3 +4,8 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+
+.vercel
+
+# Références visuelles de travail (images tierces, non utilisées par le site)
+references/

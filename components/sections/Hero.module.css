@@ -1,18 +1,25 @@
-/* La colonne de texte est bornée à gauche : le halo occupe la zone de droite.
-   Séparation SPATIALE, jamais un empilement en z-index (§08.1). */
+/* Composition centrée, de type couverture. La zone de droite n'est plus
+   réservée au système : il n'y a plus de séparation spatiale à tenir, donc la
+   colonne de texte est centrée et bornée en largeur pour garder de l'air. */
 
 .hero {
+  /* Sans cela, `min-height` s'appliquant à la boîte de CONTENU, la gouttière
+     verticale s'ajoutait aux 100svh : la section dépassait d'une soixantaine
+     de pixels et poussait l'indicateur de défilement sous la ligne de flottaison. */
+  box-sizing: border-box;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   padding: 1.75rem var(--gutter) 2rem;
   max-width: 1180px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1.4rem;
   color: var(--ink-mid);
   letter-spacing: 0.1em;
@@ -22,9 +29,7 @@
   text-decoration: none;
   /* §10.5 — cible de tap de 44 px, obtenue en agrandissant la seule zone
      cliquable : le padding grandit la boîte de bordure, la marge négative de
-     même valeur laisse la boîte de MARGE à la hauteur de la ligne de texte.
-     Le flex se dispose donc exactement comme avant — composition, typographie
-     et animation du Hero inchangées, seule la surface tapable grandit. */
+     même valeur laisse la boîte de MARGE à la hauteur de la ligne de texte. */
   display: inline-block;
   padding: 0.79rem 0;
   margin: -0.79rem 0;
@@ -39,38 +44,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Zone typographique bornée : au-delà commence la zone du système. */
-  max-width: 46rem;
+  align-items: center;
 }
 
-.name {
-  font-size: var(--step-display);
-  line-height: 0.98;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-}
-
-.quote {
-  font-family: var(--font-display), Georgia, serif;
-  font-style: italic;
-  font-size: clamp(1rem, 2.2vw, 1.35rem);
+.label {
   color: var(--ink-mid);
-  margin-bottom: 0.85rem;
+  letter-spacing: 0.22em;
+  font-size: var(--step-mono-sm);
+  margin-bottom: clamp(1.6rem, 4vw, 2.9rem);
 }
 
-.role {
-  letter-spacing: 0.16em;
+/* Le nom occupe la composition. Pas de `text-wrap: balance` ici : sur les
+   écrans étroits, la coupure naturelle entre les deux mots est la bonne. */
+.name {
+  font-size: clamp(2.6rem, 10.5vw, 8.5rem);
+  line-height: 0.94;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  margin: 0;
+}
+
+.statement {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.9vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--ink-mid);
+  /* Assez large pour que l'énoncé tienne sur UNE ligne en desktop : coupé en
+     deux, il laisse « répétitif. » orphelin et perd sa force d'affirmation. */
+  max-width: 44rem;
+  margin-top: clamp(1.5rem, 3.6vw, 2.6rem);
 }
 
 .scroll {
   color: var(--ink-mid);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   font-size: var(--step-mono-sm);
 }
 
 .scroll a {
   text-decoration: none;
-  /* Même technique : 14 px de texte, 44 px de cible, zéro décalage. */
+  /* Même technique : petite typographie, cible de 44 px, zéro décalage. */
   display: inline-block;
   padding: 0.95rem 0;
   margin: -0.95rem 0;
@@ -78,4 +93,59 @@
 
 .scroll a:hover {
   text-decoration: underline;
+}
+
+/* Entrée typographique — le seul mouvement du HERO.
+   Lente, décalée, sans rebond : le texte se pose, il n'entre pas en scène.
+   `both` garantit l'état final même si l'animation est neutralisée. */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.55em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.label,
+.name,
+.statement,
+.scroll {
+  animation: hero-rise 1.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.label {
+  animation-delay: 0.15s;
+}
+.name {
+  animation-delay: 0.3s;
+}
+.statement {
+  animation-delay: 0.6s;
+}
+.scroll {
+  animation-delay: 0.85s;
+}
+
+/* Règle non négociable (§ CLAUDE.md). La règle globale neutralise déjà les
+   durées ; on retire ici le décalage et l'état initial, explicitement. */
+@media (prefers-reduced-motion: reduce) {
+  .label,
+  .name,
+  .statement,
+  .scroll {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 30rem) {
+  /* Sous ~480 px, « RAYAN JEMAI » sur une ligne deviendrait illisible :
+     on autorise la coupure entre les deux mots. */
+  .name {
+    text-wrap: balance;
+  }
 }

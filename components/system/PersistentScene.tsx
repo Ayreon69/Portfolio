@@ -3,8 +3,22 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Canvas } from "@react-three/fiber";
-import HeroHalo from "@/components/hero/HeroHalo";
+import LivingInfrastructure from "@/components/hero/LivingInfrastructure";
 import type { DNAEdge, DNANode } from "@/lib/data-dna/types";
+
+/**
+ * Présence visuelle du système dans le HERO.
+ *
+ * `false` depuis le 2026-09-07 : le HERO est passé à une direction éditoriale
+ * typographique, sans aucune présence 3D. Toute l'infrastructure reste en
+ * place et fonctionnelle — canvas persistant, `layout-3d.ts`, prototypes A
+ * (`DataSculpture`) et B (`LivingInfrastructure`), halo d'origine
+ * (`HeroHalo`) — pour que le retour en arrière soit ce seul drapeau.
+ *
+ * Le canvas reste monté : c'est lui qui garantit la persistance entre routes
+ * (§07.1), et il ne dessine simplement plus rien.
+ */
+const HERO_SYSTEM_VISIBLE = false;
 
 /**
  * Le canvas persistant — pattern validé §07.1.
@@ -44,6 +58,17 @@ export default function PersistentScene({
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     const sync = () => setStill(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  // Petit écran : la sculpture perd son nuage de capabilities plutôt que sa
+  // netteté — moins de nœuds et d'arcs, pas une scène 3D allégée au rabais.
+  const [compact, setCompact] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 640px)");
+    const sync = () => setCompact(mq.matches);
     sync();
     mq.addEventListener("change", sync);
     return () => mq.removeEventListener("change", sync);
@@ -104,7 +129,9 @@ export default function PersistentScene({
         // `demand` sous reduced-motion : la scène est rendue puis se tait.
         frameloop={still ? "demand" : "always"}
       >
-        {isHero && <HeroHalo nodes={nodes} edges={edges} still={still} />}
+        {HERO_SYSTEM_VISIBLE && isHero && (
+          <LivingInfrastructure nodes={nodes} edges={edges} still={still} compact={compact} />
+        )}
       </Canvas>
     </div>
   );
