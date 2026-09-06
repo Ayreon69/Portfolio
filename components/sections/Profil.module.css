@@ -1,0 +1,39 @@
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--section-gap) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.eyebrow {
+  color: var(--ink-mid);
+  letter-spacing: 0.16em;
+}
+
+.title {
+  font-size: var(--step-h2);
+  max-width: 18ch;
+}
+
+.intro {
+  max-width: 62ch;
+  color: var(--ink-mid);
+  font-size: 0.95rem;
+}
+
+.surface {
+  /* Conteneur de la zone Data DNA. La représentation graphique viendra se
+     positionner ici en absolu, par-dessus l'index, sans jamais modifier la
+     géométrie de ce qui l'entoure. */
+  position: relative;
+  margin-top: 0.6rem;
+}
+
+.legend {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.08em;
+  text-transform: none;
+}

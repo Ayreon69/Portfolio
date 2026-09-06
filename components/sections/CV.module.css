@@ -1,0 +1,55 @@
+/* Rien à explorer ici, et c'est le sujet : la section est un accès, pas une
+   expérience. Deux boutons, à taille réelle, immédiatement visibles. */
+
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--section-gap) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.eyebrow {
+  color: var(--ink-mid);
+  letter-spacing: 0.16em;
+}
+
+.title {
+  font-size: var(--step-h2);
+}
+
+.roles {
+  color: var(--ink);
+  letter-spacing: 0.18em;
+}
+
+.context {
+  color: var(--ink-mid);
+  max-width: 48ch;
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.8rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.95rem 1.5rem;
+  border: 1px solid var(--line-strong);
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  /* 44 px minimum, sans dépendre de la taille du texte (§10.5). */
+  min-height: 44px;
+}
+
+.button:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+

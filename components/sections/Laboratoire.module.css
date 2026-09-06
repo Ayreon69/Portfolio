@@ -1,0 +1,120 @@
+/* Liste éditoriale, pas une grille de cartes. Le filet horizontal est le seul
+   séparateur : il aligne les lignes comme un sommaire de publication. */
+
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--section-gap) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.eyebrow {
+  color: var(--ink-mid);
+  letter-spacing: 0.16em;
+}
+
+.title {
+  font-size: var(--step-h2);
+  max-width: 18ch;
+}
+
+.list {
+  margin: 0.7rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.row {
+  display: grid;
+  /* Mobile : une colonne. Le numéro passe au-dessus du nom. */
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+
+.row:hover {
+  /* Révèle la ligne survolée. Aucune transformation, aucun déplacement :
+     rien ne bouge sous le curseur au moment du clic. */
+  background: var(--surface);
+}
+
+.number {
+  color: var(--warm-neutral);
+  letter-spacing: 0.18em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.name {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  line-height: 1.1;
+}
+
+.friction {
+  color: var(--ink-mid);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  max-width: 58ch;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.tags {
+  color: var(--ink);
+  letter-spacing: 0.14em;
+}
+
+.proof {
+  color: var(--warm-neutral);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.12em;
+}
+
+.go {
+  display: none;
+}
+
+@media (min-width: 860px) {
+  .row {
+    /* numéro · nom + friction · territoire et preuve · flèche */
+    grid-template-columns: 3.4rem minmax(0, 1fr) minmax(0, 19rem) 1.6rem;
+    align-items: start;
+    gap: 1.5rem;
+    padding: 1.5rem 0.9rem;
+    margin: 0 -0.9rem;
+  }
+
+  .meta {
+    text-align: right;
+    align-items: flex-end;
+    padding-top: 0.35rem;
+  }
+
+  .go {
+    display: block;
+    color: var(--warm-neutral);
+    justify-self: end;
+    padding-top: 0.3rem;
+  }
+
+  .row:hover .go {
+    color: var(--ink);
+  }
+}

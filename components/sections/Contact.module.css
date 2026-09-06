@@ -1,0 +1,81 @@
+/* Le seul fond noir du site (§03.3). Pleine largeur : la bascule de fond doit
+   être franche, pas un encadré posé sur le crème. */
+
+.section {
+  background: var(--black-deep);
+  color: var(--cream);
+  /* Aucun `min-height: 100vh` : la section fait la taille de ce qu'elle
+     contient. Une fin de page n'a rien à remplir. */
+}
+
+.inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--section-gap) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.eyebrow {
+  color: rgba(244, 239, 228, 0.55);
+  letter-spacing: 0.16em;
+}
+
+.title {
+  font-size: var(--step-h2);
+  text-transform: uppercase;
+  max-width: 16ch;
+}
+
+.invite {
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2.2vw, 1.3rem);
+  color: rgba(244, 239, 228, 0.72);
+}
+
+.channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1.6rem;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(244, 239, 228, 0.18);
+}
+
+.channel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1.4rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(244, 239, 228, 0.18);
+}
+
+.channelLabel {
+  color: rgba(244, 239, 228, 0.55);
+  letter-spacing: 0.18em;
+  min-width: 7rem;
+}
+
+.channelLink {
+  color: var(--cream);
+  text-decoration: underline;
+  text-decoration-color: rgba(244, 239, 228, 0.4);
+  text-underline-offset: 0.25em;
+  /* Cible de tap de 44 px (§10.5) — la ligne entière fait déjà cette hauteur. */
+  padding: 0.62rem 0;
+}
+
+.channelLink:hover {
+  text-decoration-color: var(--cream);
+}
+
+
+/* Le focus clair du reste du site serait invisible ici. */
+.section :focus-visible {
+  outline: 2px solid var(--cream);
+  outline-offset: 3px;
+}

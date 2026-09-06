@@ -1,0 +1,91 @@
+/* Le panneau est une COUCHE D'INTERFACE, pas une partie de la géométrie du
+   Data DNA : positionné en absolu, il ne prend aucune largeur au graphe et ne
+   provoque aucun reflow. `top`/`max-height` sont fixes ; `left`/`right`/`width`
+   sont calculés depuis la géométrie réelle (voir DataDNAGraph). */
+
+.panel {
+  position: absolute;
+  top: 12px;
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  padding: 14px 15px 18px;
+  box-shadow: 0 1px 12px rgba(26, 26, 24, 0.06);
+}
+
+.hint {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  line-height: 1.8;
+  text-transform: none;
+  letter-spacing: 0.06em;
+}
+
+.kind {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.12em;
+}
+
+.name {
+  font-size: 1.3rem;
+  margin: 4px 0 10px;
+  line-height: 1.15;
+}
+
+.meta {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.08em;
+  text-transform: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.group {
+  margin-top: 14px;
+}
+
+.groupTitle {
+  font-size: var(--step-mono-sm);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.groupTitle span {
+  color: var(--ink-mid);
+  font-weight: 400;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.weight {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.weight span {
+  width: 9px;
+  height: 2px;
+  background: rgba(138, 127, 106, 0.4);
+}
+
+.weight span[data-on] {
+  background: var(--ink);
+}

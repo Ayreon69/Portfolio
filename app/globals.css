@@ -1,0 +1,117 @@
+/* Tokens du design system (§03.3, §03.4). Remplace le boilerplate
+   create-next-app, qui imposait un fond blanc et un `prefers-color-scheme:
+   dark` automatique — les deux contredisent la direction artistique.
+
+   Thème unique et assumé : le crème éditorial est l'identité du site (§03.3),
+   pas une préférence à inverser. Il n'y a donc pas de variante sombre. */
+
+:root {
+  color-scheme: light;
+
+  /* Couleurs — §03.3, valeurs figées le 2026-09-05 (D-05) */
+  --cream: #f4efe4;
+  --black-deep: #0d0d0f;
+  --ink: #1a1a18;
+  --ink-mid: #55534c;
+  --warm-neutral: #8a7f6a;
+  --line: rgba(138, 127, 106, 0.34);
+  --line-strong: rgba(26, 26, 24, 0.5);
+  --surface: #faf7f0;
+
+  /* Accents projet — §03.3. RÈGLE STRICTE : un accent n'apparaît QUE sur la
+     page de son projet (/laboratoire/<slug>). Jamais dans la navigation, le
+     hero, le Data DNA ou une autre section. Déclarés ici pour qu'il n'existe
+     qu'une seule définition ; utilisés nulle part ailleurs. */
+  --accent-job-agent: #e0704a;
+  --accent-aram-stats: #3e8e7e;
+  --accent-commission-bot: #b08d3e;
+  --accent-ai-watch: #4a6fa5;
+  --accent-churn-prediction: #8c3b3b;
+
+  /* Échelle typographique — le contraste display/mono est très marqué (§03.4) */
+  --step-display: clamp(2.4rem, 6vw, 4.6rem);
+  --step-h2: clamp(1.6rem, 3.4vw, 2.6rem);
+  --step-body: 1rem;
+  --step-mono: 0.75rem;
+  --step-mono-sm: 0.66rem;
+
+  /* Espacement */
+  --gutter: clamp(1.15rem, 4vw, 3.5rem);
+  --section-gap: clamp(3.5rem, 9vw, 7rem);
+}
+
+html {
+  /* Réserve la gouttière en permanence. Sans cela, un contenu qui s'allonge
+     fait apparaître la barre de défilement, retire ~15 px au viewport et
+     redimensionne le Data DNA : sa géométrie doit rester insensible à la
+     hauteur du contenu (comportement validé sur le prototype). */
+  scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: var(--step-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  line-height: 1.05;
+  text-wrap: balance;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+/* Libellés de structure : toujours IBM Plex Mono, majuscules (§03.4) */
+.mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: var(--step-mono);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Règle non négociable : respectée partout, sans exception. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

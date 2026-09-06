@@ -1,0 +1,362 @@
+[
+  {
+    "from": "job-agent",
+    "to": "pillar-ai",
+    "kind": "feeds",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "pillar-automation",
+    "kind": "feeds",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "pillar-data",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "aram-stats",
+    "to": "pillar-automation",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "aram-stats",
+    "to": "pillar-data",
+    "kind": "feeds",
+    "weight": 3
+  },
+  {
+    "from": "commission-bot",
+    "to": "pillar-ai",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "commission-bot",
+    "to": "pillar-automation",
+    "kind": "feeds",
+    "weight": 1
+  },
+  {
+    "from": "commission-bot",
+    "to": "pillar-data",
+    "kind": "feeds",
+    "weight": 1
+  },
+  {
+    "from": "ai-watch",
+    "to": "pillar-ai",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "ai-watch",
+    "to": "pillar-automation",
+    "kind": "feeds",
+    "weight": 3
+  },
+  {
+    "from": "ai-watch",
+    "to": "pillar-data",
+    "kind": "feeds",
+    "weight": 3
+  },
+  {
+    "from": "churn-prediction",
+    "to": "pillar-ml",
+    "kind": "feeds",
+    "weight": 3
+  },
+  {
+    "from": "churn-prediction",
+    "to": "pillar-data",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "exp-commissions",
+    "to": "pillar-ai",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "exp-commissions",
+    "to": "pillar-automation",
+    "kind": "feeds",
+    "weight": 1
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "pillar-automation",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "pillar-data",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
+    "from": "job-agent",
+    "to": "python",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "playwright",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "job-agent",
+    "to": "sqlite",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "job-agent",
+    "to": "sql",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "job-agent",
+    "to": "chromadb",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "sentence-transformers",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "job-agent",
+    "to": "api-mistral",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "github-actions",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "job-agent",
+    "to": "agentic-ai",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "ia-llm",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "automation-skill",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "job-agent",
+    "to": "data-engineering",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "aram-stats",
+    "to": "python",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "aram-stats",
+    "to": "sqlite",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "aram-stats",
+    "to": "sql",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "aram-stats",
+    "to": "automation-skill",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "aram-stats",
+    "to": "data-engineering",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "commission-bot",
+    "to": "python",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "commission-bot",
+    "to": "api-mistral",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "commission-bot",
+    "to": "ia-llm",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "ai-watch",
+    "to": "python",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "ai-watch",
+    "to": "github-actions",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "ai-watch",
+    "to": "api-gemini",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "ai-watch",
+    "to": "ia-llm",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "ai-watch",
+    "to": "automation-skill",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "ai-watch",
+    "to": "data-engineering",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "churn-prediction",
+    "to": "python",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "churn-prediction",
+    "to": "xgboost-lightgbm",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "churn-prediction",
+    "to": "ml-skill",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "exp-commissions",
+    "to": "python",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "exp-commissions",
+    "to": "api-mistral",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "exp-commissions",
+    "to": "ia-llm",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "python",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "sas",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "automation-skill",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "data-engineering",
+    "kind": "uses",
+    "weight": 2
+  },
+  {
+    "from": "job-agent",
+    "to": "build",
+    "kind": "produces",
+    "weight": 1
+  },
+  {
+    "from": "aram-stats",
+    "to": "build",
+    "kind": "produces",
+    "weight": 1
+  },
+  {
+    "from": "commission-bot",
+    "to": "build",
+    "kind": "produces",
+    "weight": 1
+  },
+  {
+    "from": "ai-watch",
+    "to": "build",
+    "kind": "produces",
+    "weight": 1
+  },
+  {
+    "from": "churn-prediction",
+    "to": "build",
+    "kind": "produces",
+    "weight": 1
+  },
+  {
+    "from": "exp-commissions",
+    "to": "build",
+    "kind": "produces",
+    "weight": 1
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "build",
+    "kind": "produces",
+    "weight": 1
+  }
+]

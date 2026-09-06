@@ -1,0 +1,2166 @@
+HERO — direction retenue
+
+RAYAN JEMAI
+
+« Je n’aime pas faire deux fois la même chose. »
+
+DATA SCIENTIST / BUILDER
+
+Puis autour / derrière : un système de données vivant, composé de nœuds, connexions, particules ou flux qui évoluent doucement.
+
+L’idée importante : le système ne doit pas être un simple décor 3D. Il représente ton cerveau / ta manière de travailler :
+
+FRICTION → DATA → SYSTEM → AUTOMATION
+
+Et lorsqu'on interagit avec certains éléments, le système peut révéler progressivement :
+
+tes compétences,
+tes projets,
+tes domaines,
+tes expériences.
+Ce que ça donne visuellement
+
+Je verrais quelque chose d'assez éditorial :
+
+┌──────────────────────────────────────────────────────────────┐
+
+  RAYAN JEMAI                         ABOUT   PROJECTS   CV
+
+  « Je n'aime pas faire
+    deux fois la même chose. »
+
+  DATA SCIENTIST
+  / BUILDER
+
+                                  ·       ·
+                             ·         ·      ·
+                          ·──────·──────────·
+                    ·────────·       ·──────────·
+                       ·─────── DATA ───────·
+                           ·──────·──────·
+
+                                  SCROLL ↓
+
+└──────────────────────────────────────────────────────────────┘
+
+Mais avec beaucoup plus de finesse : typographie serif imposante, fond crème/noir selon la section, et le réseau de données beaucoup plus sophistiqué.
+
+Surtout : pas de gros slogan marketing
+
+Je préfère vraiment :
+
+« Je n’aime pas faire deux fois la même chose. »
+
+à quelque chose comme :
+
+I build intelligent solutions for complex problems.
+
+Parce que la première phrase te donne une personnalité.
+
+Et ensuite le portfolio doit démontrer la suite :
+
+Tu rencontres une friction → tu construis un système → tu automatises.
+
+C'est exactement là que tes projets comme Job Agent, Commission Bot, AI Watch, ARAM Stats, dashboards, churn prediction deviennent cohérents.
+
+Parfait. D devient notre direction visuelle principale : un système hybride entre réseau neuronal et infrastructure data.
+
+L’objectif est qu’on ne puisse pas immédiatement dire « ah, c’est juste un réseau de neurones en 3D ». Il faut que ça ressemble à ton propre système visuel.
+
+Direction du système
+
+On mélange :
+
+Nœuds → compétences, projets, expériences
+Connexions → relations entre ces éléments
+Flux → données qui circulent
+Modules → différents domaines de ton profil
+Clusters → groupes de projets ou compétences
+Particules → activité / mouvement / vie du système
+
+Visuellement, quelque chose de très propre et abstrait, avec une inspiration laboratoire numérique, pas « dashboard futuriste ».
+
+6
+Et surtout, le système doit évoluer
+
+C'est là que ça devient intéressant.
+
+Sur le Hero, tu vois simplement le système fonctionner.
+
+Puis quand tu descends :
+
+ABOUT
+
+Le système se réorganise et fait apparaître ton profil.
+
+SKILLS
+
+Les connexions se concentrent autour de Python, ML, Data Viz, Automation...
+
+PROJECTS
+
+Certains nœuds deviennent des projets.
+
+EXPERIENCE
+
+Les connexions montrent comment tes expériences ont construit tes compétences.
+
+Donc on ne fait pas :
+
+une animation 3D → une section classique → une autre animation.
+
+On fait plutôt :
+
+un même système qui raconte progressivement ton profil.
+
+Ça peut devenir la véritable signature graphique du portfolio.
+
+HERO — direction quasi définitive
+
+RAYAN JEMAI
+très grand, en serif, avec une présence presque « magazine ».
+
+Autour de lui, le système data se construit progressivement :
+
+                 ·        ·
+           ·──────────·────────·
+
+              RAYAN JEMAI
+           DATA SCIENTIST / BUILDER
+
+       ·───────·───────·──────────·
+             ·     ·       ·
+        ·──────────·───────────·
+
+      « Je n’aime pas faire deux fois
+                  la même chose. »
+
+                    ↓
+
+Mais le réseau ne doit pas forcément être symétrique ou parfaitement organisé. Il peut avoir une vie propre, avec des connexions qui apparaissent, disparaissent, se déplacent.
+
+Un détail que je trouve particulièrement intéressant
+
+Quand le visiteur arrive, le système pourrait être très dense.
+
+Puis après quelques secondes, il commence à se structurer.
+
+Les différents clusters deviennent progressivement identifiables :
+
+DATA
+AI
+AUTOMATION
+PRODUCT
+PROJECTS
+
+Et lorsqu'on descend, le système se transforme.
+
+Ça donne l'impression que le visiteur entre dans ton environnement de travail, plutôt que simplement visiter un CV.
+
+Notre concept devient
+
+Un portfolio qui se comporte comme un système intelligent.
+
+Le visiteur ne regarde pas simplement tes informations : il interagit avec une représentation de ton parcours.
+
+Par exemple :
+
+PROJECTS
+
+Le système se réorganise :
+
+              DATA
+                │
+        ┌───────┴───────┐
+        │               │
+    AUTOMATION          AI
+        │               │
+   JOB AGENT ───── AI WATCH
+        │
+   COMMISSION BOT
+
+Puis lorsqu'il entre dans JOB AGENT, le système peut montrer :
+
+JOB AGENT
+
+FRICTION → DATA → MULTI-AGENT SYSTEM → AUTOMATION
+
+Et les compétences associées deviennent visibles :
+
+Python · APIs · LLM · Agents · Automation
+
+Donc l'interaction raconte réellement quelque chose.
+
+Ce qu'on a verrouillé jusqu'ici
+Élément	Direction
+Concept	Digital Laboratory
+Ambiance	Intellectuel + premium
+Couleurs	Noir / crème / tons chauds
+Typographie	Serif + monospace
+Expérimentation	4/5
+Lisibilité	60% / 40% expérimentation
+Navigation	Scroll classique + navigation conventionnelle
+3D	Oui, mais au service du contenu
+Data	Langage d'interaction principal
+Hero	Nom + slogan + système data
+Système	Neural network + data infrastructure
+Animation	Intelligente / contextuelle
+Audio	Non
+Philosophie	Friction → Build → Automate
+
+Et surtout notre règle UX :
+
+Simple in surface, rich in depth.
+
+Un recruteur peut parcourir le site normalement en 30 secondes.
+
+Mais quelqu'un qui prend le temps d'explorer découvre toute la profondeur.
+
+On obtient une première impression qui dit immédiatement :
+
+« Ce site n’est pas une vitrine. C’est un système. »
+
+Les 5 premières secondes
+
+0 → 1 s
+Le visiteur arrive. Un système de particules / nœuds est déjà en mouvement.
+
+1 → 2 s
+Le système commence à réagir à la position de la souris.
+
+2 → 3 s
+Certains éléments convergent progressivement.
+
+3 → 4 s
+Ils commencent à former RAYAN JEMAI.
+
+4 → 5 s
+
+RAYAN JEMAI
+Je n’aime pas faire deux fois la même chose.
+
+DATA SCIENTIST / BUILDER
+
+Et le système continue de vivre autour du nom.
+
+Pas de gros « ENTER WEBSITE ».
+Pas d'introduction de 10 secondes.
+Pas de tutoriel.
+
+Le recruteur peut immédiatement commencer à scroller.
+
+Et surtout : la souris devient une partie du système
+
+Pas juste un curseur avec un effet de glow.
+
+Par exemple :
+
+déplacer la souris → influence légèrement les particules
+passer près d'un nœud → il réagit
+survoler un cluster → les connexions associées apparaissent
+cliquer → ouvre réellement le contenu
+quitter → le système revient progressivement à son état initial
+
+Donc même l'interaction elle-même raconte ton approche technique.
+
+J'imagine même une petite subtilité
+
+En bas du Hero, plutôt qu'un banal :
+
+SCROLL TO EXPLORE ↓
+
+On pourrait avoir quelque chose comme :
+
+[ 01 ] DISCOVER THE SYSTEM
+
+avec une petite ligne de données qui évolue.
+
+C'est beaucoup plus cohérent avec ton univers.
+
+On a maintenant suffisamment défini le langage visuel du Hero.
+
+La prochaine étape importante est de définir ce que le système représente concrètement : quelles données sont dedans, comment elles sont reliées, et surtout comment on passe de ton profil à tes projets.
+
+C'est là qu'on va commencer à concevoir l'architecture interactive du portfolio, avant même de parler de code.
+
+Navigation retenue
+
+On aura donc deux niveaux :
+
+1. Le parcours naturel
+
+Le recruteur peut simplement faire :
+
+SCROLL ↓
+
+et découvrir progressivement :
+
+HERO → ABOUT → DATA DNA → PROJECTS → EXPERIENCE → CV → CONTACT
+
+Le système évolue à chaque section.
+
+2. La navigation directe
+
+Un menu toujours accessible permet de sauter directement :
+
+ABOUT PROJECTS EXPERIENCE CV CONTACT
+
+Et dans le système lui-même, les éléments cliquables permettent également d'aller directement vers un projet ou une compétence.
+
+Donc :
+
+Scroll si tu veux vivre l'expérience.
+Clique si tu sais déjà ce que tu cherches.
+
+C'est exactement le compromis que je cherchais pour ton portfolio.
+
+Et je pousserais même le concept un peu plus loin
+
+Le système pourrait avoir deux états :
+
+NARRATIVE MODE
+
+Le scroll pilote le système.
+
+Exemple :
+
+PROJECTS
+
+Les différents projets apparaissent progressivement dans le réseau.
+
+Puis :
+
+JOB AGENT
+
+devient plus important visuellement.
+
+Tu continues à scroller → la section projet s'ouvre.
+
+EXPLORE MODE
+
+Tu cliques directement sur un nœud.
+
+Le système s'arrête dans son animation narrative et te laisse explorer.
+
+Tu peux passer de :
+
+PYTHON
+
+→ JOB AGENT
+
+→ AI WATCH
+
+→ AUTOMATION
+
+→ EXPERIENCE
+
+sans suivre l'ordre prévu.
+
+Et un bouton BACK te ramène proprement où tu étais.
+
+Ça donne une philosophie UX très simple
+
+The experience guides you.
+The interface never controls you.
+
+Et ça colle parfaitement à ce que tu m'as dit précédemment :
+
+Scroll = scroll.
+Button = button.
+Menu = menu.
+Back = back.
+
+On garde cette règle comme contrainte UX non négociable pour la suite.
+
+L'idée : chaque projet est un mini-laboratoire, mais l'interactivité sert à raconter le projet, pas à faire joli.
+
+Structure d'un projet
+
+Quand tu cliques sur un projet depuis le système :
+
+01 — FRICTION
+
+On commence par le problème.
+
+JOB AGENT
+Searching for the same jobs across multiple platforms is repetitive.
+
+Puis une visualisation très simple montre la friction :
+
+LinkedIn → Indeed → Welcome to the Jungle → ...
+
+qui convergent vers une recherche manuelle.
+
+02 — BUILD
+
+On montre ce que tu as construit.
+
+Le système se transforme :
+
+SOURCES → AGENTS → FILTERING → MATCHING → OUTPUT
+
+Et là, on peut avoir une vraie petite interaction.
+
+Le recruteur peut par exemple cliquer sur un agent pour comprendre son rôle.
+
+03 — DATA / SYSTEM
+
+On rentre dans la partie technique.
+
+INPUT
+ ↓
+APIs / SCRAPING
+ ↓
+PROCESSING
+ ↓
+LLM / ML
+ ↓
+SCORING
+ ↓
+OUTPUT
+
+Avec :
+
+Python · APIs · LLM · Agents · Automation
+
+04 — RESULT
+
+On revient à quelque chose de très concret.
+
+FROM 4 MANUAL SEARCHES
+TO 1 AUTOMATED PIPELINE
+
+Quelques métriques / résultats / captures peuvent apparaître ici.
+
+05 — REFLECTION
+
+Et ça, je pense que c'est important pour ton profil Data Scientist.
+
+Pas seulement :
+
+« Voilà ce que j'ai codé. »
+
+Mais :
+
+What worked?
+What didn't?
+What would I change?
+
+Ça montre ton raisonnement, pas uniquement ta capacité à produire du code.
+
+Et chaque projet a son propre univers
+
+C'est ici qu'on reprend ton idée de Digital Laboratory.
+
+Le portfolio garde son langage général :
+
+noir / crème / serif / monospace / data system
+
+Mais chaque projet peut avoir une identité secondaire.
+
+Par exemple :
+
+JOB AGENT
+
+Univers plutôt système / agents / automatisation
+
+ARAM STATS
+
+Univers data / gaming / statistiques
+
+COMMISSION BOT
+
+Univers finance / conversational AI
+
+AI WATCH
+
+Univers information / temporalité / flux
+
+CHURN PREDICTION
+
+Univers assurance / machine learning / probabilités
+
+Donc le recruteur a vraiment la sensation de passer d'un laboratoire à un autre.
+
+Et surtout : pas 5 minutes de scroll par projet
+
+Je veux qu'on pose une autre règle :
+
+Chaque projet doit être compréhensible en moins d'une minute.
+
+Un recruteur peut arriver directement au projet, regarder :
+
+PROBLEM → SYSTEM → RESULT
+
+et repartir avec une compréhension claire.
+
+S'il veut aller plus loin :
+
+EXPLORE SYSTEM
+
+et là seulement, on lui donne la profondeur interactive.
+
+C'est exactement ton principe :
+
+Simple in surface, rich in depth.
+
+On garde donc une galerie immédiatement compréhensible, mais avec le système data comme deuxième couche.
+
+À ce stade, ton portfolio commence à avoir une vraie cohérence.
+
+PROJECTS — le principe
+
+Quand le recruteur arrive :
+
+PROJECTS
+
+01  JOB AGENT
+    Multi-agent job search
+    AUTOMATION · AI · PYTHON
+
+02  ARAM STATS
+    League of Legends data analysis
+    DATA · API · VISUALIZATION
+
+03  COMMISSION BOT
+    Conversational financial assistant
+    AI · AUTOMATION · DATA
+
+04  AI WATCH
+    Automated AI monitoring
+    AI · AUTOMATION · INFORMATION
+
+05  CHURN PREDICTION
+    Individual health insurance
+    MACHINE LEARNING · INSURANCE
+
+À première vue : ultra clair.
+
+Mais visuellement, chaque ligne/carte est connectée au système.
+
+Quand tu survoles JOB AGENT, par exemple :
+
+le nœud du projet s'active ;
+les connexions vers PYTHON, AI, AUTOMATION apparaissent ;
+les autres projets liés deviennent légèrement visibles ;
+une prévisualisation du projet apparaît.
+
+Tu peux ensuite cliquer directement.
+
+Et je veux une distinction importante
+
+On ne va pas faire :
+
+« Voici mes 5 projets. »
+
+On va faire :
+
+EXPERIMENTS
+
+Parce que ça correspond beaucoup mieux à ton identité.
+
+Tu ne présentes pas seulement des projets scolaires/professionnels.
+
+Tu montres ce que tu construis quand tu rencontres un problème intéressant.
+
+Donc potentiellement :
+
+EXPERIMENTS
+
+05 SYSTEMS / 2023—2026
+
+Puis les projets.
+
+Ton portfolio commence à raconter une histoire
+
+Et c'est probablement le point le plus important de tout ce qu'on construit.
+
+Le recruteur arrive :
+
+HERO
+
+RAYAN JEMAI
+
+Je n'aime pas faire deux fois la même chose.
+
+↓
+
+PHILOSOPHY
+
+FRICTION
+
+Quelque chose prend trop de temps.
+
+↓
+
+BUILD
+
+Tu construis un système.
+
+↓
+
+AUTOMATE
+
+Le système prend le relais.
+
+↓
+
+DATA DNA
+
+On découvre tes compétences et ton parcours.
+
+↓
+
+EXPERIMENTS
+
+On voit les preuves concrètes.
+
+↓
+
+EXPERIENCE
+
+On comprend d'où vient ton expertise.
+
+↓
+
+CV
+
+On peut récupérer la version classique.
+
+↓
+
+CONTACT
+
+Let's build something.
+
+Et là, ton portfolio devient presque une démonstration de ta philosophie :
+
+Tu ne te contentes pas de parler d'automatisation.
+Tu as automatisé la manière dont tu présentes ton propre travail.
+
+On valide donc :
+
+ABOUT — DATA PROFILE
+
+Au lieu de raconter ta vie chronologiquement, on présente ton profil comme un système de données.
+
+L'idée pourrait être :
+
+ABOUT / PROFILE
+
+RAYAN JEMAI
+DATA SCIENTIST / BUILDER
+
+LOCATION        LYON, FR
+FIELD           DATA · AI · AUTOMATION
+EXPERIENCE      4+ YEARS
+
+────────────────────────────────
+
+CORE SKILLS
+
+PYTHON              ██████████
+DATA SCIENCE        █████████
+MACHINE LEARNING    █████████
+AUTOMATION          ██████████
+SQL                 ████████
+POWER BI            ███████
+AI / LLM            ████████
+
+────────────────────────────────
+
+CURRENTLY EXPLORING
+
+AI AGENTS
+AUTOMATION
+DATA PRODUCTS
+CREATIVE TECHNOLOGY
+
+Mais pas sous forme de simples barres de compétences. Ce serait trop classique.
+
+Les données doivent être visuelles et interactives.
+
+Par exemple, tu cliques sur :
+
+AUTOMATION
+
+et le système fait apparaître :
+
+JOB AGENT
+AI WATCH
+COMMISSION BOT
+
+Tu cliques sur :
+
+MACHINE LEARNING
+
+→ CHURN PREDICTION
+→ autres expériences pertinentes.
+
+Donc ton profil répond automatiquement à la question que se pose un recruteur :
+
+« OK, il dit qu'il maîtrise Python. Mais qu'est-ce qu'il a réellement construit avec ? »
+
+Une autre chose que j'aime beaucoup
+
+On peut avoir une section :
+
+SYSTEM STATS
+
+Pas des statistiques artificielles du genre :
+
+37 projets
+14 certifications
+8 technologies
+
+Ça ne t'apporte rien.
+
+Mais des informations qui racontent réellement ton profil :
+
+DATA SCIENTIST
+AUTOMATION ENTHUSIAST
+BUILDER
+
+Puis éventuellement :
+
+PYTHON
+SQL
+MACHINE LEARNING
+DATA VISUALIZATION
+AI / LLM
+POWER BI
+SAS
+
+Et surtout une phrase :
+
+I build systems that remove repetitive work.
+
+Ça devient quasiment ta signature professionnelle.
+
+Et le CV ?
+
+Je ne veux surtout pas mélanger le CV avec cette section.
+
+Le portfolio doit rester l'expérience.
+
+Puis tu as un bouton :
+
+VIEW CV →
+
+qui ouvre une vraie version CV propre, lisible et téléchargeable.
+
+Donc le recruteur qui veut explorer peut explorer.
+
+Celui qui veut simplement récupérer ton CV peut le faire en un clic.
+
+On a maintenant défini :
+
+Hero
+Navigation
+Data System
+Projects
+Project experience
+About/Profile
+
+ART DIRECTION — EDITORIAL LABORATORY
+
+L'idée est :
+
+Un laboratoire numérique présenté comme une publication éditoriale haut de gamme.
+
+La technologie est dans les interactions et les systèmes, pas dans des éléments visuels « tech » ajoutés artificiellement.
+
+Le langage visuel
+
+Typographie
+
+Gros titres → serif élégante
+Informations techniques → monospace
+Texte courant → éventuellement une sans-serif très neutre
+Beaucoup de contrastes entre très gros et très petit
+
+Composition
+
+grandes marges
+beaucoup d'espace négatif
+grille éditoriale
+lignes fines
+petites annotations
+numérotation des expériences
+éléments qui peuvent légèrement sortir de la grille
+
+Couleurs
+
+Base :
+
+OFF-WHITE / CREAM / BLACK
+
+Puis chaque expérience peut introduire sa propre couleur d'accent.
+
+Et je veux qu'on évite un piège
+
+Je ne veux pas que le site ressemble à ça :
+
+crème + serif + petites lignes + texte minuscule = « portfolio design ».
+
+La technologie doit casser légèrement cette sobriété.
+
+Par exemple, tu peux avoir une page presque statique :
+
+EXPERIMENT 03
+
+JOB AGENT
+
+Puis derrière le texte, le système data se déplace lentement.
+
+Tu passes la souris :
+
+le système réagit.
+
+Tu cliques :
+
+la composition change.
+
+Donc au premier regard :
+
+élégant.
+
+Au deuxième :
+
+technique.
+
+Après exploration :
+
+« Ah ouais, il a vraiment construit ça. »
+
+C'est exactement l'impression qu'on cherche.
+
+Notre identité visuelle
+01 — Typographie
+
+RAYAN JEMAI
+
+→ serif élégante, très grande, avec beaucoup d'espace autour.
+
+Les informations secondaires :
+
+DATA SCIENTIST / BUILDER
+EXP. 003
+PYTHON / AI / AUTOMATION
+2026.09
+
+→ monospace.
+
+Le contraste doit être très marqué.
+
+02 — Couleurs
+
+On conserve :
+
+OFF-WHITE
+CREAM
+BLACK
+
+et une couleur propre à chaque projet.
+
+Important : les couleurs de projet ne doivent jamais transformer le portfolio en site multicolore.
+
+Elles apparaissent seulement lorsque l'on entre dans une expérience.
+
+03 — Formes
+
+Je partirais sur quelque chose de très minimal :
+
+lignes fines
+cercles / nœuds
+points
+grilles
+coordonnées
+petites croix
+blocs de données
+particules
+formes organiques très discrètes
+
+Pas de gros éléments « cyberpunk ».
+
+04 — Texture
+
+Je pense qu'on peut ajouter une très légère texture analogique au fond.
+
+Un grain presque imperceptible.
+
+Pourquoi ?
+
+Parce que ça évite que le noir/crème + WebGL donne une impression trop « logiciel ».
+
+Ça donne quelque chose de plus tactile, presque imprimé.
+
+Digital technology × physical editorial object.
+
+On ne décide pas « ce projet aura du Three.js ». On décide :
+
+Est-ce que la 3D permet de mieux comprendre ou ressentir ce que j'ai construit ?
+
+Si oui → 3D.
+Si non → excellente visualisation 2D / interaction éditoriale.
+
+Ça va justement rendre les projets plus crédibles.
+
+Comment je vois tes projets
+Projet	Traitement
+Job Agent	3D / système d'agents
+ARAM Stats	Data visualization interactive
+Commission Bot	Interface conversationnelle + visualisation
+AI Watch	Flux temporel / data stream
+Churn Prediction	Visualisation ML / probabilités
+Power BI	Dashboard / data viz native
+
+Donc chaque projet a son propre langage, mais tous restent dans le même laboratoire.
+
+Oui. C est validé. Et cette phrase devient presque notre règle de motion design :
+
+THE INTERFACE IS PRECISE. THE SYSTEM IS ALIVE.
+
+Ça donne une direction très claire.
+
+Ce que ça signifie concrètement
+
+Interface
+
+menu → apparition nette
+boutons → feedback précis
+textes → transitions maîtrisées
+navigation → toujours prévisible
+scroll → comportement normal
+
+Système
+
+particules → mouvement organique
+réseau → réorganisation dynamique
+données → flux continu
+éléments 3D → inertie / physique
+interactions → réactions naturelles
+
+Donc le site peut être très vivant sans jamais devenir chaotique.
+
+D validé. Là, on a une direction de motion vraiment cohérente.
+
+Le principe devient :
+
+Le portfolio n'est pas une succession de pages. C'est un même système qui change d'état.
+
+Exemple concret
+
+Tu es dans ABOUT :
+
+      RAYAN
+        │
+   ┌────┼────┐
+ PYTHON  AI  DATA
+   │     │     │
+   └─────┼─────┘
+         │
+     AUTOMATION
+
+Tu scrolles.
+
+Les nœuds commencent à se déplacer.
+
+PYTHON, AI, DATA ne disparaissent pas brutalement.
+
+Ils se regroupent, certaines connexions se prolongent...
+
+Puis :
+
+PROJECTS
+
+apparaît.
+
+AUTOMATION devient connecté à :
+
+JOB AGENT
+AI WATCH
+COMMISSION BOT
+
+Le recruteur comprend intuitivement :
+
+« Ses projets sont la matérialisation de ses compétences. »
+
+C'est beaucoup plus puissant qu'une simple animation.
+
+C validé. Là, on a une vraie grammaire d'interaction.
+
+Calme au repos. Réactif à l'exploration.
+
+C'est important parce que ça va donner au portfolio une sensation de système vivant, sans avoir une animation permanente qui fatigue.
+
+Notre motion system
+Situation	Comportement
+Aucun mouvement	Système très calme
+Souris	Réaction subtile
+Hover	Réaction locale
+Scroll	Transformation progressive
+Click	Transition plus dynamique
+Navigation	Transformation du système
+Arrivée dans une section	Retour progressif au calme
+
+Et surtout, aucune animation ne doit empêcher de lire ou cliquer.
+
+Et je pense qu'on tient maintenant un élément qui peut vraiment donner cette sensation de « produit fini » plutôt que de simple portfolio.
+
+Le curseur devient donc contextuel.
+
+Exemple
+
+Tu arrives sur le Hero :
+
+●
+
+Tu passes sur un projet :
+
+EXPLORE
+
+Tu passes sur une compétence :
+
+INSPECT
+
+Tu passes sur un bouton :
+
+OPEN
+
+Tu arrives sur une visualisation interactive :
+
+INTERACT
+
+Et dès que tu quittes l'élément :
+
+●
+
+Retour au curseur minimal.
+
+Le système reste donc élégant et ne transforme pas chaque déplacement de souris en animation.
+
+On commence à avoir notre Design System
+
+À ce stade, voilà ce qu'on a verrouillé :
+
+CONCEPT
+
+Digital Laboratory
+
+POSITIONNEMENT
+
+Data Scientist / Builder
+
+PHILOSOPHIE
+
+Friction → Build → Automate
+
+VISUAL
+
+Editorial + Digital
+
+TYPO
+
+Serif + Monospace
+
+COLORS
+
+Black / Cream / Warm tones
+
+CORE VISUAL
+
+Neural network × Data infrastructure
+
+3D
+
+Global system + uniquement certains projets
+
+NAVIGATION
+
+Normal scroll + navigation directe
+
+INTERACTION
+
+Interface précise / système vivant
+
+MOTION
+
+Adaptive
+
+CURSOR
+
+Contextuel
+
+PROJECTS
+
+Mini-laboratory + case study
+
+PROFILE
+
+Data Profile
+
+Ça commence à être très solide.
+
+
+n commence maintenant à avoir une direction artistique complète, pas juste une collection d'effets.
+
+Le langage visuel final
+Base
+
+Crème / off-white
+
+→ identité éditoriale
+→ lisibilité
+→ espace
+→ maturité
+
+Immersion
+
+Noir profond
+
+→ projets
+→ expériences 3D
+→ data system
+→ moments plus expérimentaux
+
+Le changement de fond devient lui-même une partie de la narration.
+
+Exemple de parcours
+01 — HOME
+
+CRÈME
+
+RAYAN JEMAI
+Je n'aime pas faire deux fois la même chose.
+
+Le système data se construit autour de ton nom.
+
+02 — PROFILE
+
+CRÈME
+
+Ton Data Profile.
+
+Compétences, domaines, technologies et connexions.
+
+03 — EXPERIMENTS
+
+NOIR
+
+Le système devient plus dense.
+
+Les projets apparaissent.
+
+01 JOB AGENT
+02 ARAM STATS
+03 COMMISSION BOT
+04 AI WATCH
+05 CHURN PREDICTION
+
+04 — PROJECT
+
+NOIR
+
+Tu entres dans un laboratoire spécifique.
+
+Le projet possède sa propre identité visuelle.
+
+Le système global laisse place à un système spécifique au projet.
+
+05 — EXPERIENCE
+
+CRÈME
+
+On revient à quelque chose de plus éditorial.
+
+Ton expérience professionnelle et ton parcours sont présentés via le Data Profile, sans timeline classique.
+
+06 — CV
+
+CRÈME
+
+Très simple.
+
+VIEW CV
+
+DOWNLOAD PDF
+
+Pas besoin d'expérimentation ici.
+
+Le recruteur est venu chercher un CV → il le trouve immédiatement.
+
+07 — CONTACT
+
+NOIR
+
+Retour dans un espace plus immersif.
+
+Et quelque chose de très simple :
+
+LET'S BUILD SOMETHING.
+
+EMAIL
+LINKEDIN
+GITHUB
+
+Une chose importante
+
+Je pense qu'on doit maintenant arrêter de rajouter des effets.
+
+On a déjà :
+
+WebGL
+système data
+particules
+interactions
+curseur contextuel
+transformations
+transitions
+environnements projet
+changements de fond
+
+C'est largement suffisant.
+
+La prochaine étape ne devrait plus être :
+
+« Qu'est-ce qu'on peut ajouter ? »
+
+mais :
+
+« Comment rendre tout ça cohérent, performant et réellement impressionnant ? »
+
+1. HERO — identité éditoriale + système vivant
+Référence : Valentin Gassend
+
+Valentin Gassend — portfolio
+
+On garde surtout la puissance de l'identité dès l'arrivée et la façon dont ses projets sont intégrés à l'expérience. Son portfolio combine WebGL/Three.js, React et GSAP tout en conservant une structure de projets très lisible.
+
+Pour toi :
+
+garder la présence énorme de RAYAN JEMAI
+garder le sentiment de portfolio de créateur
+garder la richesse au hover
+ne pas copier son esthétique
+remplacer son univers par notre data system
+2. DATA SYSTEM — notre signature
+Référence : Webby — Best Data Visualization
+
+Webby Awards — Best Data Visualization
+
+Ici, ce qui nous intéresse n'est pas un site particulier mais le principe : la donnée devient une matière visuelle et un moyen de raconter quelque chose, plutôt qu'un graphique posé sur une page. Les Webby consacrent justement une catégorie aux visualisations qui rendent des datasets complexes compréhensibles tout en étant visuellement fortes.
+
+Pour toi :
+
+Pas :
+
+« Voici un joli réseau de particules. »
+
+Mais :
+
+« Voici une représentation visuelle de mon profil et de ce que j'ai construit. »
+
+C'est une distinction fondamentale.
+
+3. INTERACTION — le système doit réellement répondre
+Référence : Justine Soulié
+
+Justine Soulié — portfolio WebGL
+
+C'est une très bonne référence pour notre principe « le WebGL est une interface, pas une décoration ». Chaque projet possède une scène interactive et les mouvements répondent notamment au curseur et au scroll.
+
+Pour toi :
+
+On reprend :
+
+réaction au curseur
+physique légère
+interactions locales
+personnalité différente selon le projet
+
+Mais on conserve notre navigation classique.
+
+4. PROJECTS — expérience + vraie explication
+Référence : Marco Ayuste
+
+Son portfolio est intéressant parce qu'il part explicitement de l'idée qu'un CV ne montre pas suffisamment comment quelqu'un pense et construit. Son propre site utilise une expérience WebGL comme démonstration de ses capacités, avec une architecture où le 3D et les sections HTML fonctionnent ensemble.
+
+C'est exactement notre objectif.
+
+Pour tes projets :
+
+PROBLEM
+↓
+SYSTEM
+↓
+DATA
+↓
+RESULT
+↓
+REFLECTION
+
+Et la 3D vient expliquer le système, pas remplacer le contenu.
+
+5. MOTION — précis mais vivant
+Référence : Stefan Vitasović
+
+Son portfolio combine typographie, animations, WebGL et transitions tout en gardant une esthétique minimaliste ; son étude de cas insiste également sur l'optimisation du rendu.
+
+Ça correspond très bien à notre règle :
+
+THE INTERFACE IS PRECISE.
+THE SYSTEM IS ALIVE.
+
+6. STRUCTURE — surtout pas « expérimental pour être expérimental »
+Référence : Alex Dubranov
+
+Alex Dubranov — portfolio
+
+J'aime particulièrement son principe : des expériences immersives mais avec une attention explicite à la clarté, au mouvement et à la raison d'être des interactions. Il présente également différents types de projets — configurateur, explorer 3D, storytelling, interface IA — plutôt que de forcer tous ses projets dans le même format.
+
+C'est exactement ce qu'on veut pour toi :
+
+3D quand elle apporte quelque chose.
+
+2D quand elle est plus pertinente.
+
+Notre MOODBOARD FINAL
+
+Si je devais maintenant résumer tout le portfolio en une seule image mentale :
+
+5
+VISUEL
+
+Editorial Laboratory
+
+Crème dominant.
+
+Noir pour les espaces immersifs.
+
+Typographie serif imposante.
+
+Monospace pour les données.
+
+Lignes fines.
+
+Grilles.
+
+Nœuds.
+
+Flux.
+
+Particules.
+
+Beaucoup d'espace négatif.
+
+INTERACTION
+
+Calme → curiosité → réaction
+
+Le système est presque silencieux quand on ne fait rien.
+
+Tu bouges :
+
+il te répond.
+
+Tu explores :
+
+il se réorganise.
+
+Tu scrolles :
+
+il se transforme.
+
+Tu cliques :
+
+il t'emmène quelque part.
+
+TECHNOLOGIE
+
+Et surtout, je veux qu'on garde une contrainte très forte :
+
+Chaque effet doit avoir une justification.
+
+Three.js pour représenter une relation.
+
+Une visualisation pour expliquer une donnée.
+
+Une transition pour créer une continuité.
+
+Une interaction pour permettre une exploration.
+
+Pas :
+
+« Regardez, j'ai fait un shader. »
+
+BLUEPRINT — RAYAN JEMAI
+0. Structure globale
+
+Le site sera une single-page experience, avec des sections clairement identifiables.
+
+HOME
+ │
+ ├── HERO
+ │
+ ├── PHILOSOPHY
+ │
+ ├── DATA PROFILE
+ │
+ ├── EXPERIMENTS
+ │      ├── Job Agent
+ │      ├── ARAM Stats
+ │      ├── Commission Bot
+ │      ├── AI Watch
+ │      ├── Churn Prediction
+ │      └── Power BI
+ │
+ ├── EXPERIENCE
+ │
+ ├── CV
+ │
+ └── CONTACT
+
+Mais visuellement, le système data est présent au-dessus de cette structure.
+
+Le visiteur voit des sections classiques.
+Le système, lui, fait le lien entre elles.
+
+01 — HERO
+Objectif
+
+En 5 secondes, le recruteur doit comprendre :
+
+Rayan = Data Scientist + Builder + Automation.
+
+Et surtout avoir envie de continuer.
+
+Écran
+
+Fond crème.
+
+Au centre/gauche :
+
+RAYAN JEMAI
+
+Puis :
+
+Je n'aime pas faire deux fois la même chose.
+
+Et :
+
+DATA SCIENTIST / BUILDER
+
+À droite / autour :
+
+le système data vivant.
+
+Animation d'arrivée
+
+Le système est déjà actif.
+
+·    ·       ·
+    ·    ·
+ ·       ·       ·
+      ·
+
+Les particules commencent à converger.
+
+Elles forment progressivement :
+
+RAYAN JEMAI
+
+Puis le réseau repart autour du nom.
+
+Le curseur est immédiatement interactif.
+
+Interaction
+
+Hover sur le système :
+
+INTERACT
+
+Mouvement de souris :
+
+→ particules légèrement attirées/répulsées.
+
+Pas de gros effet.
+
+Navigation
+
+Menu en haut :
+
+ABOUT / EXPERIMENTS / EXPERIENCE / CV / CONTACT
+
+Et :
+
+FR / EN
+
+Même si l'anglais arrive plus tard, l'architecture doit être prévue dès maintenant.
+
+Scroll
+
+En bas :
+
+01 — EXPLORE ↓
+
+Le scroll reste 100 % naturel.
+
+02 — PHILOSOPHY
+
+Transition : le réseau du Hero se transforme.
+
+Les connexions commencent à se simplifier.
+
+Puis trois mots apparaissent :
+
+FRICTION
+
+BUILD
+
+AUTOMATE
+
+Avec une petite animation montrant la transformation.
+
+FRICTION
+   ↓
+IDENTIFY
+   ↓
+BUILD
+   ↓
+AUTOMATE
+Texte
+
+Très peu de texte.
+
+L'idée n'est pas de raconter ton histoire pendant 3 écrans.
+
+On veut que le recruteur comprenne immédiatement :
+
+When something becomes repetitive, I try to turn it into a system.
+
+03 — DATA PROFILE
+
+Ici, on abandonne complètement la timeline.
+
+Fond crème.
+
+Titre :
+
+DATA PROFILE
+
+Puis ton profil apparaît comme une visualisation interactive.
+
+Exemple
+RAYAN JEMAI
+
+DATA SCIENTIST
+BUILDER
+AUTOMATION
+
+────────────────────────────
+
+SKILLS
+
+PYTHON
+MACHINE LEARNING
+SQL
+AI / LLM
+DATA VISUALIZATION
+POWER BI
+SAS
+
+Mais les compétences ne sont pas de simples tags.
+
+Elles sont connectées au système.
+
+Exemple d'interaction
+
+Le recruteur passe sur :
+
+PYTHON
+
+Le système fait ressortir :
+
+JOB AGENT
+ARAM STATS
+CHURN PREDICTION
+
+Et affiche éventuellement :
+
+USED IN 03 EXPERIMENTS
+
+Il clique :
+
+→ filtre ton profil autour de Python.
+
+Même logique pour :
+
+AI
+
+AUTOMATION
+
+DATA VISUALIZATION
+
+etc.
+
+04 — EXPERIMENTS
+
+Transition :
+
+Les compétences du Data Profile se déplacent.
+
+Elles deviennent progressivement des projets.
+
+Fond → noir profond.
+
+Titre :
+
+EXPERIMENTS
+
+Puis :
+
+01  JOB AGENT
+    AUTOMATION / AI / PYTHON
+
+02  ARAM STATS
+    DATA / API / VISUALIZATION
+
+03  COMMISSION BOT
+    AI / AUTOMATION
+
+04  AI WATCH
+    AI / AUTOMATION / DATA
+
+05  CHURN PREDICTION
+    MACHINE LEARNING / INSURANCE
+
+06  POWER BI
+    DATA VISUALIZATION / ANALYTICS
+05 — PROJECT EXPLORATION
+
+C'est ici que notre concept B + C intervient.
+
+Le recruteur peut :
+
+SCROLL
+
+pour parcourir les projets.
+
+OU
+
+CLIQUER
+
+sur celui qui l'intéresse.
+
+Au hover
+
+Le système data réagit.
+
+Exemple :
+
+JOB AGENT
+
+→ connexions vers :
+
+PYTHON
+AI
+AUTOMATION
+API
+
+apparaissent.
+
+Curseur :
+
+EXPLORE
+
+06 — PROJECT PAGE
+
+Chaque projet devient son propre mini-laboratoire.
+
+Mais la structure reste toujours reconnaissable.
+
+Header
+EXPERIMENT 01
+
+JOB AGENT
+
+AUTOMATED JOB SEARCH
+
+Puis :
+
+FRICTION
+
+Quel problème voulais-tu résoudre ?
+
+↓
+
+BUILD
+
+Qu'as-tu construit ?
+
+↓
+
+SYSTEM
+
+Comment ça fonctionne ?
+
+↓
+
+DATA
+
+Quelles données / technologies ?
+
+↓
+
+RESULT
+
+Quel résultat ?
+
+↓
+
+REFLECTION
+
+Ce que tu as appris / ce que tu améliorerais.
+
+Et la 3D ?
+
+Seulement si elle apporte quelque chose.
+
+Pour Job Agent :
+
+Oui.
+
+On pourrait visualiser :
+
+JOB SOURCES
+     │
+ ┌───┼────┐
+ ↓   ↓    ↓
+AGENT AGENT AGENT
+ │     │    │
+ └──┬──┴────┘
+     ↓
+ FILTER
+     ↓
+ MATCH
+     ↓
+ OUTPUT
+
+Mais en version interactive / 3D.
+
+Pour Churn Prediction, on pourrait plutôt avoir une visualisation probabiliste / ML.
+
+Pour Power BI :
+
+Pas forcément de 3D.
+
+Et c'est très bien.
+
+07 — EXPERIENCE
+
+On revient au fond crème.
+
+Pas de timeline.
+
+Titre :
+
+EXPERIENCE
+
+Ton expérience est présentée comme un ensemble de rôles + systèmes construits.
+
+Par exemple :
+
+ECA ASSURANCES
+
+DATA SCIENTIST / ACTUARIAL STUDIES
+
+Puis :
+
+POWER BI
+AUTOMATION
+DATA ANALYSIS
+INSURANCE
+MACHINE LEARNING
+
+Et chaque compétence peut être reliée aux projets correspondants.
+
+L'idée est que le recruteur voie :
+
+ce que tu as fait → avec quelles compétences → ce que ça a produit.
+
+08 — CV
+
+Ici, zéro expérimentation inutile.
+
+Fond crème.
+
+CV
+
+Un aperçu propre de ton CV.
+
+Deux actions très visibles :
+
+VIEW CV
+
+DOWNLOAD PDF
+
+Le recruteur ne doit jamais chercher le bouton.
+
+09 — CONTACT
+
+Retour au noir.
+
+Très peu d'éléments.
+
+LET'S BUILD SOMETHING.
+
+Puis :
+
+EMAIL
+LINKEDIN
+GITHUB
+
+Et éventuellement une dernière petite phrase :
+
+Have a problem worth automating?
+
+Ça termine le site en revenant exactement à ta philosophie de départ.
+
+10 — Le système global
+
+Et c'est probablement la partie la plus importante du blueprint.
+
+Le système data n'est jamais une animation indépendante.
+
+Il évolue :
+
+                 HERO
+                   │
+             RAYAN JEMAI
+                   │
+             ┌─────┴─────┐
+             │           │
+          SKILLS      DOMAINS
+             │           │
+             └─────┬─────┘
+                   │
+              EXPERIMENTS
+                   │
+          ┌────────┼────────┐
+          ↓        ↓        ↓
+       JOB      AI WATCH   ARAM
+       AGENT      │        STATS
+          │       │
+          └───┬───┘
+              ↓
+          EXPERIENCE
+              │
+              ↓
+             CV
+              │
+              ↓
+           CONTACT
+
+Le même système traverse tout le site.
+
+C'est ce qui va donner l'impression que tout a été pensé comme un seul produit.
+
+Oui, là on commence à avoir **ton vrai Data DNA**. Et tes réponses me font légèrement évoluer le concept initial : je mettrais clairement **AI / Automation au centre**, et la Data comme infrastructure qui permet à tout ça de fonctionner.
+
+Ton CV confirme d'ailleurs cette orientation : tu te présentes comme Data Scientist orienté IA appliquée, avec du prototypage LLM, des pipelines et des solutions allant du concept à la production. 
+
+# DATA DNA — V1
+
+Je partirais sur cette hiérarchie :
+
+```text
+                         RAYAN JEMAI
+                              │
+                         ┌────┴────┐
+                         │   AI    │
+                         └────┬────┘
+                              │
+                       ┌──────┴──────┐
+                       │ AUTOMATION  │
+                       └──────┬──────┘
+                              │
+                         ┌────┴────┐
+                         │  DATA   │
+                         └────┬────┘
+                              │
+                         ┌────┴────┐
+                         │ BUILD   │
+                         └─────────┘
+```
+
+Mais **visuellement**, je ne veux surtout pas afficher cet organigramme.
+
+Le système sera beaucoup plus organique.
+
+---
+
+# 01 — AI : ton noyau
+
+C'est clairement ton **centre de gravité**.
+
+Dans le système, AI pourrait être le plus gros cluster.
+
+À l'intérieur :
+
+```text
+AI
+│
+├── LLM
+├── Generative AI
+├── NLP
+├── Agents
+├── MCP
+└── AI Prototyping
+```
+
+Et les connexions vont directement vers tes expériences.
+
+Par exemple :
+
+**AI**
+
+→ Commission Bot  
+→ Job Agent  
+→ AI Watch  
+→ Audio/NLP  
+→ Agentic Coding
+
+Ton CV donne justement des preuves concrètes de ces différentes dimensions : Mistral/Claude, chatbot interne, scoring LLM, pipeline Gemini, Whisper, MCP et Claude Code. 
+
+---
+
+# 02 — AUTOMATION
+
+Deuxième couche.
+
+Et ici, je pense que ton portfolio peut devenir vraiment personnel.
+
+**Automation** n'est pas simplement une compétence.
+
+C'est **ta manière de résoudre les problèmes**.
+
+```text
+AUTOMATION
+
+        ┌── APIs
+        ├── Scraping
+        ├── Pipelines
+        ├── Agents
+        ├── Scheduled workflows
+        └── Integrations
+```
+
+Puis :
+
+**Automation**
+
+→ Job Agent  
+→ AI Watch  
+→ Commission Bot  
+→ automatisation commissions  
+→ migration SAS → Python
+
+Et là, on commence à voir quelque chose :
+
+> **AI te donne les capacités.  
+> Automation les transforme en systèmes utiles.**
+
+---
+
+# 03 — DATA
+
+La Data devient l'infrastructure.
+
+Pas forcément le truc que tu mets le plus en avant visuellement, mais ce qui permet au reste d'exister.
+
+```text
+DATA
+
+SQL
+ETL
+DATA MODELING
+SNOWFLAKE
+ANALYTICS
+VISUALIZATION
+STATISTICS
+```
+
+Ton expérience ECA est particulièrement utile ici : Snowflake, ETL, architecture staging → core → reporting, SQL avancé, Power BI et modélisation. 
+
+---
+
+# 04 — BUILD
+
+Et je suis d'accord avec toi pour le mettre dernier.
+
+**Building n'est pas une spécialité.**
+
+C'est la conséquence des trois précédents.
+
+> **AI + Automation + Data → quelque chose de fonctionnel.**
+
+Donc plutôt que :
+
+`BUILDING`
+
+comme un quatrième domaine, je le représenterais comme **la sortie du système**.
+
+```text
+        AI
+         \
+          \
+       AUTOMATION ─────→ BUILD
+          /
+         /
+       DATA
+```
+
+Et ça devient très cohérent avec ton CV, où tes projets personnels vont justement jusqu'au pipeline fonctionnel, à l'interface web, au CLI ou au système autonome. 
+
+---
+
+# Et tes niveaux de compétences
+
+Tu m'as donné :
+
+- Python : **4.5**
+- SQL : **3**
+- Data Engineering : **3**
+- Power BI : **4.5**
+- ML : **3.5**
+- IA / LLM : **4**
+- Agentic AI : **4.5**
+- Automation : **4**
+
+Je ne mettrais **surtout pas** ces chiffres directement sur le site.
+
+Pas de :
+
+`PYTHON █████████ 90%`
+
+Ça fait portfolio étudiant.
+
+À la place, le système peut traduire ton niveau par **importance / densité / nombre de connexions / profondeur du nœud**.
+
+Par exemple :
+
+**AGENTIC AI**
+
+gros nœud, beaucoup de connexions.
+
+**SQL**
+
+nœud plus petit, mais toujours présent.
+
+Ça permet de représenter tes compétences **sans prétendre à une précision artificielle**.
+
+---
+
+# Et maintenant quelque chose d'encore plus intéressant
+
+Tu m'as dit :
+
+> **C > A > B**
+
+pour ton positionnement.
+
+Donc :
+
+**AI Builder / Automation**
+
+↓
+
+**Data Scientist**
+
+↓
+
+**Data Engineer / Analytics Engineer**
+
+C'est très intéressant parce que ça signifie que le portfolio ne devrait **pas essayer de te vendre comme un profil Data généraliste**.
+
+Il doit plutôt raconter :
+
+> **« Je suis un Data Scientist qui utilise l'IA et l'automatisation pour construire des systèmes. »**
+
+Et ça devient notre **positionnement central**.
+
+---
+
+# Ton principe philosophique
+
+Je garderais effectivement :
+
+> **Je n'aime pas faire deux fois la même chose.**
+
+Mais je ne l'utiliserais pas comme un slogan commercial.
+
+Je le traiterais comme **la règle fondamentale de ton système**.
+
+Et juste en dessous, quelque chose de plus explicatif :
+
+> **When I encounter repetitive work, I look for a way to turn it into a system.**
+
+Puis visuellement :
+
+```text
+FRICTION
+    ↓
+UNDERSTAND
+    ↓
+BUILD
+    ↓
+AUTOMATE
+    ↓
+ITERATE
+```
+
+Et là, le visiteur comprend **comment tu penses**.
+
+C'est beaucoup plus intéressant qu'une liste de soft skills.
+
+---
+
+# DATA DNA — notre version actuelle
+
+Je le résumerais ainsi :
+
+```text
+                         RAYAN JEMAI
+
+                    "I DON'T LIKE
+                  DOING THE SAME THING TWICE"
+
+                              │
+                              ▼
+
+                         ┌─────────┐
+                         │   AI    │
+                         └────┬────┘
+                              │
+                         ┌────▼────┐
+                         │AUTOMATION│
+                         └────┬────┘
+                              │
+                         ┌────▼────┐
+                         │  DATA   │
+                         └────┬────┘
+                              │
+                              ▼
+                         ┌─────────┐
+                         │  BUILD  │
+                         └─────────┘
+
+                  ↓                ↓
+             EXPERIMENTS       EXPERIENCE
+```
+
+**Ça, je pense que c'est notre cœur.**
+
+---
+

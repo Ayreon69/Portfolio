@@ -1,0 +1,191 @@
+{
+ "patch": "16.17",
+ "exportedAt": "2026-09-06",
+ "games": 89773,
+ "augment": [
+  {
+   "label": "Draw Your Sword",
+   "n": 5643,
+   "winrate": 58.85
+  },
+  {
+   "label": "High Roller",
+   "n": 31751,
+   "winrate": 57.42
+  },
+  {
+   "label": "Stackosaurus Rex",
+   "n": 4336,
+   "winrate": 55.81
+  },
+  {
+   "label": "Upgrade Ravenous Hydra",
+   "n": 13390,
+   "winrate": 55.23
+  },
+  {
+   "label": "Wee Woo Wee Woo",
+   "n": 6557,
+   "winrate": 55.19
+  },
+  {
+   "label": "Hand of Baron",
+   "n": 5744,
+   "winrate": 54.96
+  },
+  {
+   "label": "DropBear",
+   "n": 5732,
+   "winrate": 54.92
+  },
+  {
+   "label": "Windspeaker's Blessing",
+   "n": 4451,
+   "winrate": 54.53
+  },
+  {
+   "label": "Mad Scientist",
+   "n": 22440,
+   "winrate": 53.5
+  },
+  {
+   "label": "Dual Wield",
+   "n": 25028,
+   "winrate": 53.45
+  },
+  {
+   "label": "Combusting Interest",
+   "n": 25474,
+   "winrate": 53.29
+  },
+  {
+   "label": "Ultra Hydra",
+   "n": 17576,
+   "winrate": 53.29
+  }
+ ],
+ "item": [
+  {
+   "label": "Your Cut",
+   "n": 201,
+   "winrate": 63.18
+  },
+  {
+   "label": "Shattered Armguard",
+   "n": 1930,
+   "winrate": 57.62
+  },
+  {
+   "label": "Faerie Charm",
+   "n": 779,
+   "winrate": 56.87
+  },
+  {
+   "label": "Sapphire Crystal",
+   "n": 876,
+   "winrate": 56.39
+  },
+  {
+   "label": "Amplifying Tome",
+   "n": 23700,
+   "winrate": 56.2
+  },
+  {
+   "label": "Golden Spatula",
+   "n": 19226,
+   "winrate": 55.11
+  },
+  {
+   "label": "Ultra Hydra",
+   "n": 16422,
+   "winrate": 54.99
+  },
+  {
+   "label": "Guardian's Blade",
+   "n": 911,
+   "winrate": 54.56
+  },
+  {
+   "label": "Refillable Potion",
+   "n": 30410,
+   "winrate": 54.46
+  },
+  {
+   "label": "Glowing Mote",
+   "n": 5144,
+   "winrate": 53.85
+  },
+  {
+   "label": "Ruby Crystal",
+   "n": 18559,
+   "winrate": 53.8
+  },
+  {
+   "label": "Gluttonous Greaves",
+   "n": 31290,
+   "winrate": 53.59
+  }
+ ],
+ "champion": [
+  {
+   "label": "Bel'Veth",
+   "n": 2302,
+   "winrate": 58.82
+  },
+  {
+   "label": "Gwen",
+   "n": 2450,
+   "winrate": 57.84
+  },
+  {
+   "label": "Kayle",
+   "n": 7213,
+   "winrate": 55.83
+  },
+  {
+   "label": "Yone",
+   "n": 5749,
+   "winrate": 55.73
+  },
+  {
+   "label": "Briar",
+   "n": 2818,
+   "winrate": 55.5
+  },
+  {
+   "label": "Hecarim",
+   "n": 2764,
+   "winrate": 55.5
+  },
+  {
+   "label": "Sett",
+   "n": 8691,
+   "winrate": 55.23
+  },
+  {
+   "label": "Lillia",
+   "n": 6823,
+   "winrate": 54.65
+  },
+  {
+   "label": "Yasuo",
+   "n": 4857,
+   "winrate": 54.54
+  },
+  {
+   "label": "Master Yi",
+   "n": 6374,
+   "winrate": 54.53
+  },
+  {
+   "label": "Jinx",
+   "n": 10907,
+   "winrate": 54.51
+  },
+  {
+   "label": "Zaahen",
+   "n": 3615,
+   "winrate": 54.16
+  }
+ ]
+}

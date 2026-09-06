@@ -1,0 +1,173 @@
+/* Page projet — squelette éditorial. Le seul endroit du site où `--accent`
+   (couleur du projet, §03.3) est lu. */
+
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: clamp(1.75rem, 5vw, 3.5rem) var(--gutter) var(--section-gap);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.back {
+  color: var(--ink-mid);
+  letter-spacing: 0.12em;
+}
+
+.back a {
+  text-decoration: none;
+  /* Cible de tap de 44 px (§10.5) — trouvée sous la cible en vérifiant le
+     rendu à 375 px. Le padding porte la hauteur, pas la taille du texte. */
+  display: inline-block;
+  padding: 0.8rem 0.4rem 0.8rem 0;
+}
+
+.back a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.eyebrow {
+  color: var(--accent);
+  letter-spacing: 0.2em;
+}
+
+.title {
+  font-size: var(--step-h2);
+}
+
+.subtitle {
+  color: var(--ink-mid);
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 2rem;
+  margin: 0.9rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+}
+
+.fact {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.fact dt {
+  color: var(--warm-neutral);
+}
+
+.fact dd {
+  margin: 0;
+  color: var(--ink);
+}
+
+.metric {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.metricValue {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1;
+  color: var(--accent);
+}
+
+.metricLabel {
+  color: var(--ink-mid);
+  letter-spacing: 0.1em;
+  max-width: 44ch;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.4rem;
+  margin-top: 0.4rem;
+  letter-spacing: 0.1em;
+}
+
+/* Même contrainte : ce sont les deux liens les plus importants de la page. */
+.links a {
+  display: inline-block;
+  padding: 0.8rem 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.blockTitle {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: var(--step-mono);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--ink-mid);
+}
+
+.blockBody {
+  max-width: 62ch;
+  line-height: 1.65;
+}
+
+/* Chaîne du pipeline (§09.3) : du texte, pas un schéma animé. Elle défile
+   dans son propre conteneur plutôt que d'élargir la page. */
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0;
+  color: var(--ink);
+  letter-spacing: 0.14em;
+  font-size: var(--step-mono-sm);
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0.4rem;
+  overflow-x: auto;
+}
+
+.chainStep {
+  white-space: nowrap;
+}
+
+.chainArrow {
+  color: var(--accent);
+  margin: 0 0.6rem;
+}
+
+.stack {
+  color: var(--ink-mid);
+  letter-spacing: 0.1em;
+  font-size: var(--step-mono-sm);
+  line-height: 1.9;
+  margin-top: 0.4rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+
+.pending {
+  color: var(--warm-neutral);
+  letter-spacing: 0.1em;
+  font-size: var(--step-mono-sm);
+}

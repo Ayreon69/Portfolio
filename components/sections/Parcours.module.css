@@ -1,0 +1,173 @@
+/* Trois colonnes = les trois temps du wireframe. Mobile : elles s'empilent
+   dans le même ordre — la lecture reste « fait → avec quoi → produit ». */
+
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--section-gap) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.eyebrow {
+  color: var(--ink-mid);
+  letter-spacing: 0.16em;
+}
+
+.title {
+  font-size: var(--step-h2);
+  max-width: 18ch;
+}
+
+.role {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.1rem;
+  color: var(--ink-mid);
+  letter-spacing: 0.14em;
+}
+
+.employer {
+  color: var(--ink);
+}
+
+.seniority {
+  color: var(--warm-neutral);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  margin-top: 1.2rem;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.name {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.3rem, 3.4vw, 1.7rem);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.colLabel {
+  color: var(--warm-neutral);
+  letter-spacing: 0.16em;
+  font-size: var(--step-mono-sm);
+}
+
+.text {
+  color: var(--ink-mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 46ch;
+}
+
+.caps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Aucun soulignement, aucun cadre : ces compétences ne sont PAS cliquables.
+   Seuls les systèmes du laboratoire le sont, et eux portent un soulignement.
+   Une décoration qui promet un clic inexistant est un bug d'interface. */
+.cap {
+  color: var(--ink);
+  letter-spacing: 0.12em;
+}
+
+.cap + .cap::before {
+  content: "·";
+  color: var(--warm-neutral);
+  margin-right: 0.7rem;
+}
+
+.pillars {
+  color: var(--warm-neutral);
+  letter-spacing: 0.14em;
+  font-size: var(--step-mono-sm);
+  margin-top: 0.3rem;
+}
+
+.metricValue {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+
+.shared {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 1.1rem;
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.1em;
+}
+
+.sharedLabel {
+  color: var(--warm-neutral);
+}
+
+.sharedItem {
+  /* Souligné par défaut : c'est le seul élément cliquable du bloc. */
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.25em;
+  /* Cible de tap de 44 px minimum (§10.5) : la hauteur vient du padding, pas
+     d'une taille de texte gonflée. */
+  display: inline-block;
+  padding: 0.85rem 0;
+}
+
+.sharedItem:hover {
+  text-decoration-color: var(--ink);
+}
+
+.count {
+  color: var(--warm-neutral);
+}
+
+.legend {
+  color: var(--warm-neutral);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.08em;
+  text-transform: none;
+  max-width: 62ch;
+  margin-top: 0.6rem;
+}
+
+@media (min-width: 860px) {
+  .columns {
+    /* fait · avec quoi · produit */
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.4rem;
+  }
+}

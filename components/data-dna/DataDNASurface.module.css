@@ -1,0 +1,6 @@
+/* La surface ne contraint rien : sa hauteur vient de ce qu'elle contient
+   (l'index, ou le SVG et son viewBox). Aucun padding ajouté pour « faire de la
+   place » au panneau — celui-ci se loge dans l'espace vide du graphe. */
+.surface {
+  position: relative;
+}

@@ -1,0 +1,123 @@
+/* Mise en forme de l'index Data DNA.
+   Mobile-first : c'est la représentation indexée qui est la référence (§10.1),
+   le desktop l'élargit. Aucun état ne dépend du survol (§10.5). */
+
+.index {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.clusters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+@media (min-width: 560px) {
+  .clusters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .clusters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cluster {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1rem 0.95rem 1.1rem;
+  background: var(--surface);
+}
+
+.clusterLabel {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: var(--step-mono);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  margin: 0;
+}
+
+.capabilities {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+}
+
+.capability {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 0.6rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px dashed var(--line);
+}
+
+.capability:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.capabilityName {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Le nombre d'usages : une donnée, alignée comme une donnée. */
+.capabilityCount {
+  font-size: var(--step-mono-sm);
+  color: var(--ink-mid);
+  font-variant-numeric: tabular-nums;
+}
+
+.capabilityUsers {
+  grid-column: 1 / -1;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--ink-mid);
+  margin-top: 0.2rem;
+}
+
+.fedBy {
+  font-size: var(--step-mono-sm);
+  line-height: 1.55;
+  color: var(--ink-mid);
+  letter-spacing: 0.06em;
+  text-transform: none;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--line);
+}
+
+.fedByLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+
+/* La compétence la plus partagée : la colonne vertébrale du profil.
+   Le nom et le compte sont calculés, jamais écrits. */
+.spine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--line-strong);
+}
+
+.spineName {
+  font-size: var(--step-mono);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.spineText {
+  font-size: 0.82rem;
+  color: var(--ink-mid);
+}

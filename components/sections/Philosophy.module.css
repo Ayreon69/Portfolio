@@ -1,0 +1,134 @@
+/* Section courte et éditoriale : un titre, la boucle, une signature.
+   Mobile d'abord — §10.4 demande « les 5 étapes en composition verticale
+   éditoriale ». La révélation au scroll n'est pas implémentée : le gel des
+   effets (§03.2) et la lisibilité au repos priment. */
+
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--section-gap) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.eyebrow {
+  color: var(--ink-mid);
+  letter-spacing: 0.16em;
+}
+
+.title {
+  font-size: var(--step-h2);
+  max-width: 22ch;
+}
+
+.loopFrame {
+  margin-top: 0.4rem;
+}
+
+/* --- Mobile : colonne verticale, le filet fait office de connecteur --- */
+
+.loop {
+  /* La feuille globale ne réinitialise que `ul` : sans ce `margin: 0`, la
+     marge d'agent utilisateur de `ol` coupe le filet entre la colonne et son
+     retour. */
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding-left: 1.35rem;
+  border-left: 1px solid var(--line);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  /* Cible de tap et respiration : jamais deux termes collés (§10.5). */
+  min-height: 1.6rem;
+}
+
+.term {
+  color: var(--ink);
+  letter-spacing: 0.2em;
+  font-size: var(--step-mono);
+}
+
+.arrow {
+  display: none;
+}
+
+.loopReturn {
+  position: relative;
+  height: 2.1rem;
+  border-left: 1px solid var(--line);
+}
+
+.glyph {
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  transform: translateX(-50%);
+  /* Le fond crème coupe le filet : le glyphe est POSÉ sur la ligne. */
+  background: var(--cream);
+  color: var(--warm-neutral);
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.15rem 0;
+}
+
+.signature {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1rem, 2.1vw, 1.3rem);
+  color: var(--ink-mid);
+  max-width: 34ch;
+  /* Aucun filet ici : le crochet de la boucle en est déjà un, juste au-dessus.
+     Deux règles horizontales à 30 px l'une de l'autre encombrent au lieu de
+     structurer. L'espace suffit à marquer la conclusion. */
+  margin-top: 1.9rem;
+}
+
+/* --- Desktop : la boucle sur une ligne, refermée par un crochet --- */
+
+@media (min-width: 760px) {
+  .loop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .step {
+    min-height: 0;
+    gap: 0;
+  }
+
+  .term {
+    letter-spacing: 0.24em;
+    font-size: 0.8rem;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: clamp(1.6rem, 3.4vw, 3.2rem);
+    margin: 0 clamp(0.6rem, 1.4vw, 1.1rem);
+    border-top: 1px solid var(--line);
+  }
+
+  .loopReturn {
+    height: 1.6rem;
+    margin-top: 0.85rem;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .glyph {
+    left: 50%;
+    bottom: -0.62rem;
+    padding: 0 0.55rem;
+  }
+}

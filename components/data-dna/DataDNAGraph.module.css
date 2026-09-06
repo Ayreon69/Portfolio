@@ -1,0 +1,83 @@
+/* Couleurs du Data DNA. Une seule définition, tirée des tokens du design
+   system — le prototype les répétait en dur à chaque élément.
+
+   Aucun accent projet ici : les 5 accents sont réservés aux pages projet
+   (§03.3). Toute la hiérarchie passe par la forme, la taille et la valeur. */
+
+.wrapper {
+  position: relative;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- arêtes --- */
+
+.edge {
+  stroke: var(--warm-neutral);
+}
+
+.edgeActive {
+  stroke: var(--ink);
+}
+
+/* --- nœuds --- */
+
+.node {
+  cursor: pointer;
+}
+
+.nodeFilled {
+  fill: var(--ink);
+}
+
+.nodeHollow {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+
+.nodeHollowStrong {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.activeRing {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1;
+  stroke-opacity: 0.5;
+}
+
+/* --- labels --- */
+
+.labelLayer {
+  pointer-events: none;
+}
+
+.label {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  fill: var(--ink);
+  /* Halo derrière le texte : un label reste lisible même au-dessus d'une arête. */
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3.5;
+  stroke-linejoin: round;
+}
+
+.labelStructural {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  letter-spacing: 0.14em;
+  stroke-width: 5;
+}
+
+.labelCapability {
+  fill: var(--ink-mid);
+}

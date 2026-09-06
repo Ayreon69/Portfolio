@@ -1,0 +1,644 @@
+[
+  {
+    "id": "pillar-ai",
+    "slug": "pillar-ai",
+    "label": "AI",
+    "type": "pillar",
+    "cluster": "ai",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "AI",
+      "description": "Centre de gravité du système, le plus gros cluster. IA générative / LLM / agents."
+    }
+  },
+  {
+    "id": "pillar-ml",
+    "slug": "pillar-ml",
+    "label": "ML",
+    "type": "pillar",
+    "cluster": "ml",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "ML",
+      "description": "Apprentissage supervisé / modèles prédictifs / statistiques appliquées. Distinct de AI (arbitrage A-10)."
+    }
+  },
+  {
+    "id": "pillar-automation",
+    "slug": "pillar-automation",
+    "label": "AUTOMATION",
+    "type": "pillar",
+    "cluster": "automation",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "AUTOMATION",
+      "description": "La manière de résoudre les problèmes ; traverse les trois autres clusters."
+    }
+  },
+  {
+    "id": "pillar-data",
+    "slug": "pillar-data",
+    "label": "DATA",
+    "type": "pillar",
+    "cluster": "data",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "DATA",
+      "description": "Infrastructure, ce qui permet au reste d'exister."
+    }
+  },
+  {
+    "id": "build",
+    "slug": "build",
+    "label": "BUILD",
+    "type": "output",
+    "cluster": null,
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "BUILD",
+      "description": "Sortie du système, pas un cluster. Conséquence de AI / ML / AUTOMATION / DATA."
+    }
+  },
+  {
+    "id": "job-agent",
+    "slug": "job-agent",
+    "label": "Job Agent",
+    "type": "experiment",
+    "cluster": "ai",
+    "year": 2026,
+    "status": "live",
+    "friction": "La recherche d'emploi manuelle (scanner plusieurs sites, lire chaque offre, juger sa pertinence, adapter l'angle de candidature) ne scale pas sur plusieurs zones géographiques cherchées en parallèle.",
+    "metric": {
+      "value": "107",
+      "label": "offres scorées, pipeline entièrement tracé"
+    },
+    "treatment": "webgl",
+    "mobileTreatment": "dataviz-2d",
+    "proofLevel": "live-demo",
+    "anonymized": false,
+    "universe": "Système / agents / automatisation",
+    "links": {
+      "repo": "https://github.com/Ayreon69/job-agent",
+      "live": "https://job-agent-otyo.onrender.com/"
+    },
+    "fr": {
+      "title": "Job Agent",
+      "subtitle": "Recherche d'emploi automatisée",
+      "friction": "La recherche d'emploi manuelle ne scale pas sur plusieurs zones géographiques cherchées en parallèle.",
+      "system": "Pipeline multi-agents : scraping → RAG sur le profil candidat → agent de scoring (géographie déterministe + matching sémantique par atome + arbitrage LLM) → agent de génération d'analyse → API + dashboard de tri. Aucune soumission automatique.",
+      "result": "107 offres scorées, 3 niveaux de trace JSON par offre pour audit complet.",
+      "construction": null,
+      "donnees": null,
+      "recul": null
+    }
+  },
+  {
+    "id": "aram-stats",
+    "slug": "aram-stats",
+    "label": "ARAM Stats",
+    "type": "experiment",
+    "cluster": "data",
+    "year": 2026,
+    "status": "live",
+    "friction": "Riot bloque volontairement l'accès aux données de la file ARAM : Mayhem (match-v5 renvoie 403 sur la queue 2400) — impossible de savoir quels champions, augments et objets dominent réellement ce mode.",
+    "metric": {
+      "value": "150 140",
+      "label": "parties collectées"
+    },
+    "treatment": "dataviz",
+    "mobileTreatment": "dataviz-2d",
+    "proofLevel": "live-demo",
+    "anonymized": true,
+    "universe": "Data / gaming / statistiques",
+    "links": {
+      "live": "https://mayhem-7wz.pages.dev/"
+    },
+    "fr": {
+      "title": "ARAM Stats",
+      "subtitle": "Statistiques du mode ARAM : Mayhem",
+      "friction": "Riot bloque volontairement l'accès aux données de la file ARAM : Mayhem — impossible de savoir quels champions/augments/objets dominent réellement.",
+      "system": "Crawler en boule de neige sur l'API locale du client League (LCU), stockage SQLite, deux interfaces de restitution (explorateur local + site public au filtrage 100% navigateur).",
+      "result": "150 140 parties, 1,5M lignes joueur, filtrage/agrégation de 1,5M lignes en 11 à 37ms dans le navigateur.",
+      "construction": null,
+      "donnees": null,
+      "recul": null
+    }
+  },
+  {
+    "id": "commission-bot",
+    "slug": "commission-bot",
+    "label": "Commission Bot",
+    "type": "experiment",
+    "cluster": "ai",
+    "year": 2026,
+    "status": "live",
+    "friction": "Comprendre et calculer les commissions d'assurance (précompte, linéaire) demande de naviguer un script métier complexe et un fichier de paramétrage Excel — expertise concentrée chez peu de personnes, difficile à transmettre.",
+    "metric": {
+      "value": "~22 000",
+      "label": "tokens de base de connaissance"
+    },
+    "treatment": "dataviz",
+    "mobileTreatment": "editorial",
+    "proofLevel": "case-study",
+    "anonymized": true,
+    "universe": "Finance / conversational AI",
+    "links": null,
+    "fr": {
+      "title": "Commission Bot",
+      "subtitle": "Assistant expert en calcul de commissions",
+      "friction": "Une expertise concentrée chez peu de personnes, difficile à transmettre.",
+      "system": "Assistant conversationnel qui explique les règles sans jamais calculer lui-même : injection du contexte complet dans le system prompt, anonymisation systématique avant tout appel API.",
+      "result": "Base de connaissance complète servie de façon honnête, jamais de règle inventée.",
+      "construction": null,
+      "donnees": null,
+      "recul": null
+    }
+  },
+  {
+    "id": "ai-watch",
+    "slug": "ai-watch",
+    "label": "AI Watch",
+    "type": "experiment",
+    "cluster": "ai",
+    "year": 2026,
+    "status": "live",
+    "friction": "Suivre l'actualité IA en continu sur ~34 sources pour rester à jour ne scale pas manuellement : l'essentiel se noie dans le bruit.",
+    "metric": {
+      "value": "15 733",
+      "label": "fiches en base"
+    },
+    "treatment": "dataviz",
+    "mobileTreatment": "dataviz-2d",
+    "proofLevel": "live-demo",
+    "anonymized": false,
+    "universe": "Information / temporalité / flux",
+    "links": {
+      "live": "https://veille-ia.pages.dev/"
+    },
+    "fr": {
+      "title": "AI Watch",
+      "subtitle": "Veille IA autonome",
+      "friction": "Suivre l'actualité IA en continu sur ~34 sources ne scale pas manuellement.",
+      "system": "Collecteur autonome (GitHub Actions) qui agrège les flux, score chaque item selon un profil de pertinence, publie un digest quotidien + hebdomadaire, avec une version publique expurgée où chaque lecteur apporte sa propre clé API.",
+      "result": "15 733 fiches en base, rendement arbitré source par source (7 sources désactivées).",
+      "construction": null,
+      "donnees": null,
+      "recul": null
+    }
+  },
+  {
+    "id": "churn-prediction",
+    "slug": "churn-prediction",
+    "label": "Churn Prediction",
+    "type": "experiment",
+    "cluster": "ml",
+    "year": 2023,
+    "status": "lost",
+    "friction": "Chez ECA Assurances, un fort volume de signatures clients masquait un problème structurel : plus de 50% des clients résiliaient avant leur première année, sans signal d'alerte précoce.",
+    "metric": {
+      "value": "85%",
+      "label": "recall sur la classe résiliation"
+    },
+    "treatment": "dataviz",
+    "mobileTreatment": "static",
+    "proofLevel": "case-study",
+    "anonymized": true,
+    "universe": "Assurance / ML / probabilités",
+    "links": null,
+    "fr": {
+      "title": "Churn Prediction",
+      "subtitle": "Prédiction de résiliation (reconstruction méthodologique)",
+      "friction": "Plus de 50% des clients résiliaient avant leur première année, sans signal d'alerte précoce.",
+      "system": "Pipeline de classification supervisée : EDA → pipeline data → feature engineering → comparaison de plusieurs modèles → gradient boosting retenu.",
+      "result": "Recall de 85% sur la classe résiliation.",
+      "construction": null,
+      "donnees": null,
+      "recul": "Implémentation originale perdue — reconstruction méthodologique transparente, annoncée explicitement plutôt que masquée."
+    }
+  },
+  {
+    "id": "exp-commissions",
+    "slug": "exp-commissions",
+    "label": "Automatisation des commissions",
+    "type": "experience",
+    "cluster": "ai",
+    "year": 2025,
+    "status": "live",
+    "friction": "Seul expert de l'entreprise sur les règles de commissionnement — toute question passait par lui, consommant du temps des deux côtés.",
+    "metric": {
+      "value": "+70%",
+      "label": "vitesse de réponse, erreurs quasi nulles"
+    },
+    "treatment": "editorial",
+    "mobileTreatment": "editorial",
+    "proofLevel": "case-study",
+    "anonymized": true,
+    "universe": "ECA Assurances",
+    "links": null,
+    "fr": {
+      "title": "Automatisation des commissions",
+      "subtitle": "ECA Assurances",
+      "friction": "Seul expert des règles de commissionnement, toute question passait par lui.",
+      "system": "Le même système que Commission Bot, construit et utilisé en conditions réelles dans l'entreprise.",
+      "result": "+70% de vitesse de réponse, erreurs quasi nulles.",
+      "construction": null,
+      "donnees": null,
+      "recul": null
+    }
+  },
+  {
+    "id": "exp-sas-python",
+    "slug": "exp-sas-python",
+    "label": "Migration SAS → Python",
+    "type": "experience",
+    "cluster": "automation",
+    "year": 2026,
+    "status": "archived",
+    "friction": "Une trentaine de programmes de production tournaient sous SAS — coût de licence pour toute l'équipe, lenteur et fiabilité en retrait.",
+    "metric": {
+      "value": "50 000 €/an",
+      "label": "économie de licences SAS"
+    },
+    "treatment": "editorial",
+    "mobileTreatment": "editorial",
+    "proofLevel": "case-study",
+    "anonymized": false,
+    "universe": "ECA Assurances",
+    "links": null,
+    "fr": {
+      "title": "Migration SAS → Python",
+      "subtitle": "ECA Assurances",
+      "friction": "Une trentaine de programmes de production sous SAS, coûteux et peu fiables.",
+      "system": "Migration vers Python sur la préconisation de Rayan — décision stratégique autant qu'exécution.",
+      "result": "Économie de plus de 50 000€/an sur les licences, fiabilité et rapidité accrues.",
+      "construction": null,
+      "donnees": null,
+      "recul": null
+    }
+  },
+  {
+    "id": "python",
+    "slug": "python",
+    "label": "Python",
+    "type": "capability",
+    "cluster": "automation",
+    "weightInputs": {
+      "selfLevel": 4.5
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "Python"
+    }
+  },
+  {
+    "id": "sql",
+    "slug": "sql",
+    "label": "SQL",
+    "type": "capability",
+    "cluster": "data",
+    "weightInputs": {
+      "selfLevel": 3
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "SQL"
+    }
+  },
+  {
+    "id": "power-bi",
+    "slug": "power-bi",
+    "label": "Power BI",
+    "type": "capability",
+    "cluster": "data",
+    "weightInputs": {
+      "selfLevel": 4.5
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "Power BI"
+    }
+  },
+  {
+    "id": "ia-llm",
+    "slug": "ia-llm",
+    "label": "IA / LLM",
+    "type": "capability",
+    "cluster": "ai",
+    "weightInputs": {
+      "selfLevel": 4
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "IA / LLM"
+    }
+  },
+  {
+    "id": "agentic-ai",
+    "slug": "agentic-ai",
+    "label": "Agentic AI",
+    "type": "capability",
+    "cluster": "ai",
+    "weightInputs": {
+      "selfLevel": 4.5
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "Agentic AI"
+    }
+  },
+  {
+    "id": "automation-skill",
+    "slug": "automation-skill",
+    "label": "Automation",
+    "type": "capability",
+    "cluster": "automation",
+    "weightInputs": {
+      "selfLevel": 4
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "Automation"
+    }
+  },
+  {
+    "id": "ml-skill",
+    "slug": "ml-skill",
+    "label": "Machine Learning",
+    "type": "capability",
+    "cluster": "ml",
+    "weightInputs": {
+      "selfLevel": 3.5
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "Machine Learning"
+    }
+  },
+  {
+    "id": "data-engineering",
+    "slug": "data-engineering",
+    "label": "Data Engineering",
+    "type": "capability",
+    "cluster": "data",
+    "weightInputs": {
+      "selfLevel": 3
+    },
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "Data Engineering"
+    }
+  },
+  {
+    "id": "playwright",
+    "slug": "playwright",
+    "label": "Playwright",
+    "type": "capability",
+    "cluster": "automation",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "Playwright"
+    }
+  },
+  {
+    "id": "sqlite",
+    "slug": "sqlite",
+    "label": "SQLite",
+    "type": "capability",
+    "cluster": "data",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "SQLite"
+    }
+  },
+  {
+    "id": "chromadb",
+    "slug": "chromadb",
+    "label": "ChromaDB",
+    "type": "capability",
+    "cluster": "ai",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "ChromaDB"
+    }
+  },
+  {
+    "id": "sentence-transformers",
+    "slug": "sentence-transformers",
+    "label": "sentence-transformers",
+    "type": "capability",
+    "cluster": "ai",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "sentence-transformers"
+    }
+  },
+  {
+    "id": "api-mistral",
+    "slug": "api-mistral",
+    "label": "API Mistral",
+    "type": "capability",
+    "cluster": "ai",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "API Mistral"
+    }
+  },
+  {
+    "id": "github-actions",
+    "slug": "github-actions",
+    "label": "GitHub Actions",
+    "type": "capability",
+    "cluster": "automation",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "GitHub Actions"
+    }
+  },
+  {
+    "id": "xgboost-lightgbm",
+    "slug": "xgboost-lightgbm",
+    "label": "XGBoost / LightGBM",
+    "type": "capability",
+    "cluster": "ml",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "XGBoost / LightGBM"
+    }
+  },
+  {
+    "id": "api-gemini",
+    "slug": "api-gemini",
+    "label": "API Gemini",
+    "type": "capability",
+    "cluster": "ai",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "API Gemini"
+    }
+  },
+  {
+    "id": "sas",
+    "slug": "sas",
+    "label": "SAS",
+    "type": "capability",
+    "cluster": "data",
+    "year": null,
+    "status": "live",
+    "friction": null,
+    "metric": null,
+    "treatment": null,
+    "mobileTreatment": null,
+    "proofLevel": null,
+    "anonymized": false,
+    "fr": {
+      "label": "SAS"
+    }
+  }
+]

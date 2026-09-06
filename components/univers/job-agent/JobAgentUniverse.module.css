@@ -1,0 +1,207 @@
+/* Univers Job Agent. Tokens du design system uniquement (§03.6). */
+
+.wrapper {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.lead {
+  max-width: 46rem;
+  color: var(--ink);
+}
+
+.snapshot {
+  color: var(--warm-neutral);
+  font-size: var(--step-mono-sm);
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  max-width: 46rem;
+  margin-top: -0.4rem;
+}
+
+/* Un seul contrôle à deux états. */
+.controls {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.controls button {
+  font: inherit;
+  font-family: var(--font-mono), monospace;
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.08em;
+  color: var(--ink-mid);
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  min-height: 44px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.controls button[aria-pressed="true"] {
+  color: var(--ink);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.controls button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Lecture de repos : les trois nombres du mode courant. */
+.readout {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  max-width: 46rem;
+}
+
+.readout strong {
+  color: var(--ink);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* La liste des 10 exigences. Une exigence = une ligne ; celle qui se
+   décompose (QMS) grandit verticalement pour contenir ses 7 atomes — c'est
+   la MÊME ligne qui se transforme, pas une seconde colonne qui apparaît à
+   côté. Rien ne bouge horizontalement : uniquement la hauteur et le
+   contenu. */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.row {
+  border-bottom: 1px solid var(--line);
+  padding: 0.6rem 0;
+}
+
+.rowHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.rowText {
+  max-width: 32rem;
+}
+
+.rowFigures {
+  flex-shrink: 0;
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.rowFigures[data-flag] {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Chaque exigence est un <details> natif : ouvrable au clavier ou à la
+   souris, SANS JavaScript, que le contrôle global fonctionne ou non. Le
+   contenu atomique est donc toujours atteignable dans le HTML — seule sa
+   position par défaut (fermé) dépend du mode courant côté client. */
+.details {
+  border: none;
+}
+
+.details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.details > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.marker {
+  display: inline-block;
+  width: 1em;
+  color: var(--warm-neutral);
+  transition: transform 300ms ease;
+}
+
+.details[open] .marker {
+  transform: rotate(90deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marker {
+    transition: none;
+  }
+}
+
+.detailBody {
+  padding-top: 0.1rem;
+}
+
+.atoms {
+  list-style: none;
+  margin: 0.7rem 0 0.2rem;
+  padding: 0.7rem 0 0 1.2rem;
+  border-left: 2px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.atom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: var(--step-mono-sm);
+}
+
+.atom[data-flag] {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.atomLabel {
+  font-family: var(--font-mono), monospace;
+}
+
+.atomFigures {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  font-family: var(--font-mono), monospace;
+}
+
+.flagNote {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--accent);
+  font-size: var(--step-mono-sm);
+  max-width: 40rem;
+}
+
+@media (max-width: 640px) {
+  .rowHead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .atom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+  }
+}

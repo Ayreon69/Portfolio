@@ -1,0 +1,170 @@
+/* Univers ARAM. Aucune couleur, aucune typographie, aucune règle de motion
+   propre : tout vient des tokens du design system (§03.6 — ce qui ne varie
+   jamais entre univers). L'univers change ce qu'on regarde, pas la charte. */
+
+.wrapper {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+/* Accroche : elle est en corps de texte, pas en mono — c'est une phrase à
+   lire, pas une donnée à scruter. */
+.lead {
+  max-width: 46rem;
+  color: var(--ink);
+}
+
+/* Identité de l'instantané. Elle vient AVANT les chiffres, jamais après :
+   c'est ce qui empêche de les confondre avec ceux du site public. */
+.snapshot {
+  color: var(--warm-neutral);
+  font-size: var(--step-mono-sm);
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  max-width: 46rem;
+  margin-top: -0.4rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.6rem;
+  align-items: flex-end;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.controlLabel {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.1em;
+}
+
+.control select {
+  font: inherit;
+  font-family: var(--font-mono), monospace;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  /* §10.5 — 44 px de cible, obtenus par le padding et non par la typographie. */
+  min-height: 44px;
+  padding: 0 2rem 0 0.7rem;
+  max-width: 15rem;
+}
+
+.control select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.canvas {
+  width: 100%;
+  height: 260px;
+  display: block;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.readout {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  max-width: 46rem;
+  margin-top: -0.3rem;
+}
+
+.readout strong {
+  color: var(--ink);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.caption {
+  caption-side: bottom;
+  margin-top: 0.9rem;
+  color: var(--warm-neutral);
+  font-size: var(--step-mono-sm);
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.55rem 0.9rem 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: baseline;
+}
+
+.table th {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+/* Les chiffres s'alignent en colonne : ils se comparent en diagonale. */
+.table td.mono {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Une ligne tranchable est encrée ; une ligne non tranchable reste lisible
+   mais recule. La distinction n'est jamais portée par la seule couleur : la
+   colonne « Intervalle » l'écrit en toutes lettres. */
+.table tbody tr {
+  color: var(--warm-neutral);
+}
+
+.table tbody tr[data-decidable] {
+  color: var(--ink);
+}
+
+.fallback {
+  margin-top: 1.6rem;
+}
+
+.barLabel {
+  position: relative;
+  z-index: 1;
+}
+
+/* La barre est décorative et le tableau porte déjà la valeur : elle est en
+   aria-hidden côté TSX, et posée sous le libellé. */
+.bar {
+  display: block;
+  height: 2px;
+  margin-top: 0.3rem;
+  background: var(--accent);
+  opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+  .table th:nth-child(4),
+  .table td:nth-child(4) {
+    display: none;
+  }
+
+  .controls {
+    gap: 0.9rem;
+  }
+
+  .control select {
+    max-width: none;
+    width: 100%;
+  }
+}

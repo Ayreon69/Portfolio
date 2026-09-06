@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "snapshot": "job-agent-trace-24",
+    "offer_id": 24,
+    "source_composite": "trace_24.json",
+    "source_atomic": "trace_24_atomic.json",
+    "note": "Traces réelles du pipeline de scoring RAG, non rejouées. Aucun score global : ces distances mesurent la proximité sémantique d'une exigence à un chunk du profil, pas un score de matching global."
+  },
+  "composite": {
+    "requirements": 10,
+    "retenues": 10,
+    "signaux": 0,
+    "items": [
+      {
+        "texte": "gouvernance et gestion des données QMS (ISO 13485, FDA 21 CFR Part 820, EU MDR)",
+        "distance": 0.5357,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "nettoyage/validation/fiabilisation de données (structurées et non structurées)",
+        "distance": 0.5225,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "analyse statistique avancée (tests, régression, distributions, modélisation prédictive)",
+        "distance": 0.4814,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "développement et automatisation de KPIs/dashboards qualité",
+        "distance": 0.4601,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "data mining et extraction d'insights à partir de sources variées",
+        "distance": 0.4581,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "machine learning (feature selection, optimisation de classificateurs, modèles prédictifs)",
+        "distance": 0.1785,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "traitement de grands jeux de données dans un environnement régulé",
+        "distance": 0.5069,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "maîtrise des outils de reporting et d'analyse (ex: Python, R, SQL, outils BI)",
+        "distance": 0.257,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "support aux audits réglementaires et conformité des données",
+        "distance": 0.4724,
+        "verdict": "retenu"
+      },
+      {
+        "texte": "collaboration avec les équipes IT/Qualité pour l'amélioration des systèmes",
+        "distance": 0.4448,
+        "verdict": "retenu"
+      }
+    ]
+  },
+  "atomique": {
+    "atomes": 63,
+    "retenus": 62,
+    "signaux": 1,
+    "qms": {
+      "texte": "gouvernance et gestion des données QMS (ISO 13485, FDA 21 CFR Part 820, EU MDR)",
+      "atomes": [
+        {
+          "label": "ISO 13485",
+          "distance": 0.7625,
+          "verdict": "flag_uncertain"
+        },
+        {
+          "label": "FDA 21 CFR Part 820",
+          "distance": 0.6508,
+          "verdict": "retenu"
+        },
+        {
+          "label": "EU MDR",
+          "distance": 0.5632,
+          "verdict": "retenu"
+        },
+        {
+          "label": "gouvernance des données QMS",
+          "distance": 0.5194,
+          "verdict": "retenu"
+        },
+        {
+          "label": "gestion des données QMS",
+          "distance": 0.489,
+          "verdict": "retenu"
+        },
+        {
+          "label": "traçabilité des données",
+          "distance": 0.5833,
+          "verdict": "retenu"
+        },
+        {
+          "label": "disponibilité des données",
+          "distance": 0.5061,
+          "verdict": "retenu"
+        }
+      ]
+    },
+    "resume_autres": [
+      {
+        "texte": "cartographie et intégration des sources de données",
+        "distance": 0.4878,
+        "verdict": "retenu",
+        "atomes": 5
+      },
+      {
+        "texte": "qualité et intégrité des données",
+        "distance": 0.4455,
+        "verdict": "retenu",
+        "atomes": 6
+      },
+      {
+        "texte": "prétraitement et exploration des données (structurées et non structurées)",
+        "distance": 0.4485,
+        "verdict": "retenu",
+        "atomes": 6
+      },
+      {
+        "texte": "développement et automatisation de KPI et tableaux de bord qualité",
+        "distance": 0.3308,
+        "verdict": "retenu",
+        "atomes": 5
+      },
+      {
+        "texte": "analyse statistique et modélisation prédictive",
+        "distance": 0.3784,
+        "verdict": "retenu",
+        "atomes": 8
+      },
+      {
+        "texte": "machine learning et algorithmes de classification",
+        "distance": 0.1863,
+        "verdict": "retenu",
+        "atomes": 5
+      },
+      {
+        "texte": "support aux audits réglementaires et internes",
+        "distance": 0.47,
+        "verdict": "retenu",
+        "atomes": 7
+      },
+      {
+        "texte": "expertise des outils de reporting et systèmes qualité",
+        "distance": 0.4624,
+        "verdict": "retenu",
+        "atomes": 7
+      },
+      {
+        "texte": "expérience dans les environnements réglementés (médical, pharmaceutique, aérospatial)",
+        "distance": 0.4732,
+        "verdict": "retenu",
+        "atomes": 7
+      }
+    ]
+  }
+}
