@@ -122,6 +122,17 @@
   margin-bottom: 0.15rem;
 }
 
+/* Ce que le chiffre mesure. Sans lui, « 50 000 €/an » n'est qu'un montant :
+   le lecteur ne sait pas s'il s'agit d'un budget, d'un coût ou d'une économie.
+   Même traitement que sur les pages projet — mono discret sous la valeur. */
+.metricLabel {
+  color: var(--ink-mid);
+  font-size: var(--step-mono-sm);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.55rem;
+  max-width: 30ch;
+}
+
 .shared {
   display: flex;
   flex-wrap: wrap;

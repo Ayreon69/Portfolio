@@ -93,11 +93,18 @@ export default function Parcours() {
                 <p className={`mono ${styles.colLabel}`}>
                   Ce que ça a produit
                 </p>
-                {/* Le chiffre, puis la phrase. `metric.label` n'est PAS affiché
-                    ici : pour les deux expériences, il est déjà contenu dans
-                    `fr.result` — l'afficher écrirait deux fois la même chose. */}
+                {/* Le chiffre, ce qu'il mesure, puis la phrase.
+                    `metric.label` était masqué tant qu'il était recopié dans
+                    `fr.result` ; ce n'est plus le cas, et sans lui « 50 000 €/an »
+                    s'affichait sans qu'on sache de quoi il s'agissait. Même
+                    couple valeur/libellé que les pages projet. */}
                 {xp.metric && (
-                  <p className={styles.metricValue}>{xp.metric.value}</p>
+                  <>
+                    <p className={styles.metricValue}>{xp.metric.value}</p>
+                    <p className={`mono ${styles.metricLabel}`}>
+                      {xp.metric.label}
+                    </p>
+                  </>
                 )}
                 {xp.result && <p className={styles.text}>{xp.result}</p>}
               </div>
