@@ -45,9 +45,21 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = projectBySlug.get(slug);
   if (!project) return {};
+
+  const title = `${project.title} — Rayan Jemai`;
+  const description = project.friction ?? undefined;
+
+  // `title` et `description` seuls ne suffisent pas : `openGraph.title` déclaré
+  // dans le layout racine est HÉRITÉ et l'emporte. Sans ces deux blocs, la
+  // carte partagée d'une page projet affichait la bonne image mais le titre du
+  // site — le lecteur voyait « Job Agent » sur l'image et « Rayan Jemai —
+  // Data Scientist » en légende. L'image, elle, vient de `opengraph-image.tsx`
+  // par convention de fichier : rien à déclarer ici.
   return {
-    title: `${project.title} — Rayan Jemai`,
-    description: project.friction ?? undefined,
+    title,
+    description,
+    openGraph: { type: "article", title, description },
+    twitter: { title, description },
   };
 }
 

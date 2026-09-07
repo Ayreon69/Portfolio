@@ -27,10 +27,40 @@ const plexSans = IBM_Plex_Sans({
 });
 
 
+const SITE_URL = "https://rayan-jemai-portfolio.vercel.app";
+const TITLE = "Rayan Jemai — Data Scientist · AI Builder";
+const DESCRIPTION =
+  "Portfolio construit comme un système : projets, compétences et expériences reliés par leurs dépendances réelles.";
+
 export const metadata: Metadata = {
-  title: "Rayan Jemai — Data Scientist · AI Builder",
-  description:
-    "Portfolio construit comme un système : projets, compétences et expériences reliés par leurs dépendances réelles.",
+  // `metadataBase` n'est pas un détail : sans lui, Next émet des URL d'images
+  // RELATIVES, qu'aucun crawler ne résout — la carte de partage reste vide.
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+
+  // Le portfolio existe pour être envoyé : à un recruteur par mail, sur
+  // LinkedIn, dans un message. Sans ces balises, le lien collé produit une
+  // carte grise sans image — le meilleur contenu du site est le plus partagé
+  // et était le plus mal servi.
+  //
+  // Aucune formulation nouvelle ici : titre et description sont ceux déjà
+  // affichés, déclarés une seule fois ci-dessus. L'image vient de
+  // `app/opengraph-image.tsx`, que Next rattache par convention de fichier —
+  // et chaque page projet a la sienne, qui remplace celle-ci.
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: SITE_URL,
+    siteName: "Rayan Jemai",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
