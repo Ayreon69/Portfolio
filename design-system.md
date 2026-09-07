@@ -17,7 +17,6 @@ règles directement utilisables en code.
 --accent-aram-stats:        #3E8E7E; /* teal sourd */
 --accent-commission-bot:    #B08D3E; /* or mat */
 --accent-ai-watch:          #4A6FA5; /* bleu ardoise */
---accent-churn-prediction:  #8C3B3B; /* bordeaux mat */
 ```
 
 **Règle stricte :** un accent projet n'apparaît **que** sur la page de ce projet
@@ -135,8 +134,11 @@ Voir `prototype-persistance-canvas/` pour l'implémentation de référence.
   route `/data-dna`) : 2D SVG pour la page, 3D pour le halo du Hero — mêmes
   données, deux niveaux de lecture. Positions issues d'une simulation de forces
   déterministe ; **les piliers ne sont jamais ancrés à des positions choisies**.
-  L'asymétrie du graphe (noyau dense + `ML` périphérique) est une information
-  sur le profil : ne pas la corriger.
+  L'asymétrie du graphe est une information sur le profil : ne pas la
+  corriger. (Le cluster `ML` qui servait d'exemple ici a été retiré le
+  2026-09-07 : ses deux compétences n'étaient portées que par un seul projet,
+  lui-même sans données ni recul. La règle vaut toujours pour les asymétries
+  restantes.)
 - **C'est l'interaction qui rend le Data DNA supérieur à une liste**, pas le
   graphe statique. Conséquence : la page ne peut pas être une image, et le
   fallback sans JS doit être une liste structurée réelle.

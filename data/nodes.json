@@ -19,25 +19,6 @@
     }
   },
   {
-    "id": "pillar-ml",
-    "slug": "pillar-ml",
-    "label": "ML",
-    "type": "pillar",
-    "cluster": "ml",
-    "year": null,
-    "status": "live",
-    "friction": null,
-    "metric": null,
-    "treatment": null,
-    "mobileTreatment": null,
-    "proofLevel": null,
-    "anonymized": false,
-    "fr": {
-      "label": "ML",
-      "description": "Apprentissage supervisé / modèles prédictifs / statistiques appliquées. Distinct de AI (arbitrage A-10)."
-    }
-  },
-  {
     "id": "pillar-automation",
     "slug": "pillar-automation",
     "label": "AUTOMATION",
@@ -219,36 +200,6 @@
       "construction": null,
       "donnees": null,
       "recul": null
-    }
-  },
-  {
-    "id": "churn-prediction",
-    "slug": "churn-prediction",
-    "label": "Churn Prediction",
-    "type": "experiment",
-    "cluster": "ml",
-    "year": 2023,
-    "status": "lost",
-    "friction": "Chez ECA Assurances, un fort volume de signatures clients masquait un problème structurel : plus de 50% des clients résiliaient avant leur première année, sans signal d'alerte précoce.",
-    "metric": {
-      "value": "85%",
-      "label": "recall sur la classe résiliation"
-    },
-    "treatment": "dataviz",
-    "mobileTreatment": "static",
-    "proofLevel": "case-study",
-    "anonymized": true,
-    "universe": "Assurance / ML / probabilités",
-    "links": null,
-    "fr": {
-      "title": "Churn Prediction",
-      "subtitle": "Prédiction de résiliation (reconstruction méthodologique)",
-      "friction": "Plus de 50% des clients résiliaient avant leur première année, sans signal d'alerte précoce.",
-      "system": "Pipeline de classification supervisée : EDA → pipeline data → feature engineering → comparaison de plusieurs modèles → gradient boosting retenu.",
-      "result": "Recall de 85% sur la classe résiliation.",
-      "construction": null,
-      "donnees": null,
-      "recul": "Implémentation originale perdue — reconstruction méthodologique transparente, annoncée explicitement plutôt que masquée."
     }
   },
   {
@@ -438,27 +389,6 @@
     }
   },
   {
-    "id": "ml-skill",
-    "slug": "ml-skill",
-    "label": "Machine Learning",
-    "type": "capability",
-    "cluster": "ml",
-    "weightInputs": {
-      "selfLevel": 3.5
-    },
-    "year": null,
-    "status": "live",
-    "friction": null,
-    "metric": null,
-    "treatment": null,
-    "mobileTreatment": null,
-    "proofLevel": null,
-    "anonymized": false,
-    "fr": {
-      "label": "Machine Learning"
-    }
-  },
-  {
     "id": "data-engineering",
     "slug": "data-engineering",
     "label": "Data Engineering",
@@ -585,24 +515,6 @@
     "anonymized": false,
     "fr": {
       "label": "GitHub Actions"
-    }
-  },
-  {
-    "id": "xgboost-lightgbm",
-    "slug": "xgboost-lightgbm",
-    "label": "XGBoost / LightGBM",
-    "type": "capability",
-    "cluster": "ml",
-    "year": null,
-    "status": "live",
-    "friction": null,
-    "metric": null,
-    "treatment": null,
-    "mobileTreatment": null,
-    "proofLevel": null,
-    "anonymized": false,
-    "fr": {
-      "label": "XGBoost / LightGBM"
     }
   },
   {

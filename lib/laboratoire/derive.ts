@@ -30,7 +30,6 @@ export const GALLERY_TAGS: Record<string, string[]> = {
   "aram-stats": ["Data", "API", "Visualization"],
   "commission-bot": ["AI", "Automation"],
   "ai-watch": ["AI", "Automation", "Data"],
-  "churn-prediction": ["Machine Learning", "Insurance"],
 };
 
 export const PROOF_LABEL: Record<ProofLevel, string> = {

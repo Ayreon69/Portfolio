@@ -1,8 +1,10 @@
 // Test de non-régression du Data DNA. Aucune dépendance : `node --experimental-strip-types`.
 //
-// Verrouille l'état canonique acté le 2026-09-05 (§04.7) :
-//   dataset source   29 nœuds / 60 arêtes
-//   graphe narratif  27 nœuds / 53 arêtes
+// Verrouille l'état canonique acté le 2026-09-05 (§04.7), resserré le
+// 2026-09-07 par le retrait complet du ML — pilier, compétences, et le projet
+// Churn Prediction, qui n'avait ni instantané de données ni recul écrit :
+//   dataset source   25 nœuds / 54 arêtes
+//   graphe narratif  23 nœuds / 48 arêtes
 //
 // Si l'un de ces nombres bouge sans décision explicite, le build doit crier.
 
@@ -30,7 +32,6 @@ import jobAgentContent from "../content/laboratoire/job-agent.ts";
 import aramStatsContent from "../content/laboratoire/aram-stats.ts";
 import commissionBotContent from "../content/laboratoire/commission-bot.ts";
 import aiWatchContent from "../content/laboratoire/ai-watch.ts";
-import churnPredictionContent from "../content/laboratoire/churn-prediction.ts";
 import type { DNAEdge, DNANode } from "../lib/data-dna/types.ts";
 
 // Lecture par fs plutot qu'import JSON : le script doit tourner sous Node nu,
@@ -55,12 +56,12 @@ function check(label: string, actual: unknown, expected: unknown) {
 }
 
 console.log("\n— Dataset source (data/*.json, inchangé) —");
-check("nœuds source", sourceNodes.length, 29);
-check("arêtes source", sourceEdges.length, 60);
+check("nœuds source", sourceNodes.length, 25);
+check("arêtes source", sourceEdges.length, 54);
 
 console.log("\n— Graphe narratif (dérivé, canonique) —");
-check("nœuds narratifs", narrativeGraph.nodes.length, 27);
-check("arêtes narratives", narrativeGraph.edges.length, 53);
+check("nœuds narratifs", narrativeGraph.nodes.length, 23);
+check("arêtes narratives", narrativeGraph.edges.length, 48);
 check(
   "BUILD absent",
   narrativeGraph.nodes.some((n) => n.id === "build"),
@@ -97,18 +98,17 @@ console.log("\n— Index (dérivé, aucun chiffre codé en dur) —");
 const model = buildIndexModel(narrativeGraph);
 check("clusters", model.clusters.map((c) => c.label), [
   "AI",
-  "ML",
   "AUTOMATION",
   "DATA",
 ]);
-check("systèmes (expérimentations + expériences)", model.systemCount, 7);
+check("systèmes (expérimentations + expériences)", model.systemCount, 6);
 check("compétence la plus partagée", model.mostShared?.label, "Python");
 check(
   "…utilisée par N systèmes",
   model.mostShared?.usedByCount,
   model.systemCount
 );
-check("…touche les 4 piliers", model.mostShared?.pillars.length, 4);
+check("…touche les 3 piliers", model.mostShared?.pillars.length, 3);
 check(
   "toute compétence affichée a au moins un usage",
   model.clusters.every((c) => c.capabilities.every((k) => k.usedBy.length > 0)),
@@ -134,9 +134,9 @@ check(
   true
 );
 
-console.log("\n— Laboratoire (5 expérimentations, §08.4 / §09.5) —");
+console.log("\n— Laboratoire (4 expérimentations, §08.4 / §09.5) —");
 const projects = deriveProjects(sourceNodes);
-check("projets", projects.length, 5);
+check("projets", projects.length, 4);
 check(
   "slugs et numérotation",
   projects.map((p) => `${p.number} ${p.slug}`),
@@ -145,7 +145,6 @@ check(
     "02 aram-stats",
     "03 commission-bot",
     "04 ai-watch",
-    "05 churn-prediction",
   ]
 );
 check(
@@ -199,20 +198,17 @@ const written = deriveProjects(sourceNodes, {
   "aram-stats": aramStatsContent,
   "commission-bot": commissionBotContent,
   "ai-watch": aiWatchContent,
-  "churn-prediction": churnPredictionContent,
 });
 check(
-  "Les 4 autres — 02 et 04 rédigées",
+  "Les 3 autres — 02 et 04 rédigées",
   written
     .filter((p) => p.slug !== "job-agent")
     .every((p) => p.sections[1].paragraphs.length > 0 && p.sections[3].paragraphs.length > 0),
   true
 );
-// Plus aucune section vide nulle part : les cinq pages projet sont rédigées.
-// Churn Prediction n'a pas de recul écrit par Rayan, mais le graphe en porte
-// une phrase (l'implémentation perdue, annoncée explicitement).
+// Plus aucune section vide nulle part : les quatre pages projet sont rédigées.
 check(
-  "Aucune section vide sur les 5 projets",
+  "Aucune section vide sur les 4 projets",
   written.reduce((n, p) => n + p.sections.filter((s) => s.paragraphs.length === 0).length, 0),
   0
 );
@@ -350,8 +346,8 @@ check(
   "compétences partagées avec le laboratoire",
   experiences.map((x) => x.sharedWith.map((p) => `${p.slug} ${p.shared}`)),
   [
-    ["job-agent 3", "commission-bot 3", "ai-watch 2", "aram-stats 1", "churn-prediction 1"],
-    ["job-agent 3", "aram-stats 3", "ai-watch 3", "commission-bot 1", "churn-prediction 1"],
+    ["job-agent 3", "commission-bot 3", "ai-watch 2", "aram-stats 1"],
+    ["job-agent 3", "aram-stats 3", "ai-watch 3", "commission-bot 1"],
   ]
 );
 check(

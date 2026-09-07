@@ -15,7 +15,7 @@ export type DNANode = {
   id: string;
   label: string;
   type: "pillar" | "output" | "experiment" | "experience" | "capability";
-  cluster: "ai" | "ml" | "automation" | "data" | null;
+  cluster: "ai" | "automation" | "data" | null;
   slug?: string;
   year?: number | null;
   status?: "live" | "archived" | "lost" | null;

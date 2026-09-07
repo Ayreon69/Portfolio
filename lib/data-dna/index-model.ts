@@ -17,7 +17,7 @@ import type { DNAEdge, DNANode } from "./types";
  *  pur, donc testable hors bundler. */
 export type IndexSource = { nodes: DNANode[]; edges: DNAEdge[] };
 
-const CLUSTER_ORDER = ["ai", "ml", "automation", "data"] as const;
+const CLUSTER_ORDER = ["ai", "automation", "data"] as const;
 export type ClusterId = (typeof CLUSTER_ORDER)[number];
 
 export type IndexLink = { id: string; label: string; weight: number };

@@ -6,7 +6,6 @@ import styles from "./DataDNAPanel.module.css";
 
 const CLUSTER_LABEL: Record<string, string> = {
   ai: "AI",
-  ml: "ML",
   automation: "AUTOMATION",
   data: "DATA",
 };

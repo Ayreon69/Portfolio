@@ -29,7 +29,7 @@ export default function Laboratoire() {
       </p>
 
       <h2 id="laboratoire-titre" className={styles.title}>
-        Cinq systèmes construits
+        Quatre systèmes construits
       </h2>
 
       <ol className={styles.list}>

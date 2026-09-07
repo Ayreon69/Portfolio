@@ -10,16 +10,15 @@ l'architecture détaillée vivent dans
 
 ## Contenu
 
-Cinq expérimentations documentées dans `/laboratoire`, chacune avec sa
+Quatre expérimentations documentées dans `/laboratoire`, chacune avec sa
 construction, ses données, son système, son résultat et son recul :
 
 - **Job Agent** — recherche d'emploi automatisée, agents + RAG
 - **ARAM Stats** — statistiques du mode ARAM (League of Legends), 1,5M lignes
 - **Commission Bot** — assistant conversationnel sur règles métier (case study, dépôt privé)
 - **AI Watch** — veille IA automatisée, ~34 sources arbitrées au rendement
-- **Churn Prediction** — classification supervisée, reconstruction méthodologique
 
-Quatre de ces cinq pages intègrent un **univers interactif** : une
+Trois de ces quatre pages intègrent un **univers interactif** : une
 démonstration du mécanisme réel du projet (pas une illustration), alimentée
 par un instantané de données réel, figé et daté — jamais une valeur
 inventée ni un score fabriqué.

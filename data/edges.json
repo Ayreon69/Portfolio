@@ -66,18 +66,6 @@
     "weight": 3
   },
   {
-    "from": "churn-prediction",
-    "to": "pillar-ml",
-    "kind": "feeds",
-    "weight": 3
-  },
-  {
-    "from": "churn-prediction",
-    "to": "pillar-data",
-    "kind": "feeds",
-    "weight": 2
-  },
-  {
     "from": "exp-commissions",
     "to": "pillar-ai",
     "kind": "feeds",
@@ -258,24 +246,6 @@
     "weight": 2
   },
   {
-    "from": "churn-prediction",
-    "to": "python",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "churn-prediction",
-    "to": "xgboost-lightgbm",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "churn-prediction",
-    "to": "ml-skill",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
     "from": "exp-commissions",
     "to": "python",
     "kind": "uses",
@@ -337,12 +307,6 @@
   },
   {
     "from": "ai-watch",
-    "to": "build",
-    "kind": "produces",
-    "weight": 1
-  },
-  {
-    "from": "churn-prediction",
     "to": "build",
     "kind": "produces",
     "weight": 1
