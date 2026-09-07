@@ -3,8 +3,8 @@
 // Verrouille l'état canonique acté le 2026-09-05 (§04.7), resserré le
 // 2026-09-07 par le retrait complet du ML — pilier, compétences, et le projet
 // Churn Prediction, qui n'avait ni instantané de données ni recul écrit :
-//   dataset source   23 nœuds / 50 arêtes
-//   graphe narratif  21 nœuds / 44 arêtes
+//   dataset source   21 nœuds / 42 arêtes
+//   graphe narratif  19 nœuds / 36 arêtes
 //
 // Retrait du 2026-09-07 (suite) : `api-mistral` et `api-gemini`. Quel
 // fournisseur de LLM sert de moteur est une dépendance technique incidente au
@@ -15,6 +15,19 @@
 // que `llm` ne connectait déjà. `ia-llm` est renommé `llm` (« IA / LLM » →
 // « LLM ») : « IA » et « LLM » dans le même intitulé disaient deux fois la
 // même chose.
+//
+// Retrait du 2026-09-07 (fin) : `automation-skill` et `data-engineering`.
+// RÈGLE : une compétence ne peut pas être un synonyme de son pilier — elle
+// doit nommer un outil ou une technique, pas redire le domaine.
+// « Automation » sous le pilier « AUTOMATION » était le même mot, avec un
+// voisinage strictement inclus dans celui du pilier : le cercle disait moins
+// que son pilier, sous la même étiquette. « Data Engineering » sous « DATA »
+// est le même défaut, une case moins voyant — et les deux compétences avaient
+// entre elles un voisinage identique, donc deux cercles indiscernables.
+// `python` et `llm` ont eux aussi le voisinage de leur pilier, et sont
+// CONSERVÉS : ils nomment un outil et une technique, pas le domaine, et la
+// coïncidence y est un fait vrai (tous les projets IA sont des projets LLM ;
+// Python est dans les 6 systèmes) — c'est l'insight, pas la redondance.
 //
 // Si l'un de ces nombres bouge sans décision explicite, le build doit crier.
 
@@ -66,12 +79,12 @@ function check(label: string, actual: unknown, expected: unknown) {
 }
 
 console.log("\n— Dataset source (data/*.json, inchangé) —");
-check("nœuds source", sourceNodes.length, 23);
-check("arêtes source", sourceEdges.length, 50);
+check("nœuds source", sourceNodes.length, 21);
+check("arêtes source", sourceEdges.length, 42);
 
 console.log("\n— Graphe narratif (dérivé, canonique) —");
-check("nœuds narratifs", narrativeGraph.nodes.length, 21);
-check("arêtes narratives", narrativeGraph.edges.length, 44);
+check("nœuds narratifs", narrativeGraph.nodes.length, 19);
+check("arêtes narratives", narrativeGraph.edges.length, 36);
 check(
   "BUILD absent",
   narrativeGraph.nodes.some((n) => n.id === "build"),
@@ -336,7 +349,7 @@ check(
   experiences.map((x) => x.capabilities.map((c) => `${c.label} ${c.weight}`)),
   [
     ["Python 3", "LLM 2"],
-    ["Python 3", "SAS 3", "Automation 2", "Data Engineering 2"],
+    ["Python 3", "SAS 3"],
   ]
 );
 check(
@@ -357,7 +370,7 @@ check(
   experiences.map((x) => x.sharedWith.map((p) => `${p.slug} ${p.shared}`)),
   [
     ["job-agent 2", "commission-bot 2", "ai-watch 2", "aram-stats 1"],
-    ["job-agent 3", "aram-stats 3", "ai-watch 3", "commission-bot 1"],
+    ["job-agent 1", "aram-stats 1", "commission-bot 1", "ai-watch 1"],
   ]
 );
 check(

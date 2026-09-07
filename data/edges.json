@@ -144,18 +144,6 @@
     "weight": 3
   },
   {
-    "from": "job-agent",
-    "to": "automation-skill",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "job-agent",
-    "to": "data-engineering",
-    "kind": "uses",
-    "weight": 2
-  },
-  {
     "from": "aram-stats",
     "to": "python",
     "kind": "uses",
@@ -172,18 +160,6 @@
     "to": "sql",
     "kind": "uses",
     "weight": 2
-  },
-  {
-    "from": "aram-stats",
-    "to": "automation-skill",
-    "kind": "uses",
-    "weight": 2
-  },
-  {
-    "from": "aram-stats",
-    "to": "data-engineering",
-    "kind": "uses",
-    "weight": 3
   },
   {
     "from": "commission-bot",
@@ -216,18 +192,6 @@
     "weight": 2
   },
   {
-    "from": "ai-watch",
-    "to": "automation-skill",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "ai-watch",
-    "to": "data-engineering",
-    "kind": "uses",
-    "weight": 2
-  },
-  {
     "from": "exp-commissions",
     "to": "python",
     "kind": "uses",
@@ -250,18 +214,6 @@
     "to": "sas",
     "kind": "uses",
     "weight": 3
-  },
-  {
-    "from": "exp-sas-python",
-    "to": "automation-skill",
-    "kind": "uses",
-    "weight": 2
-  },
-  {
-    "from": "exp-sas-python",
-    "to": "data-engineering",
-    "kind": "uses",
-    "weight": 2
   },
   {
     "from": "job-agent",

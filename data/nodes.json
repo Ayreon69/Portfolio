@@ -368,48 +368,6 @@
     }
   },
   {
-    "id": "automation-skill",
-    "slug": "automation-skill",
-    "label": "Automation",
-    "type": "capability",
-    "cluster": "automation",
-    "weightInputs": {
-      "selfLevel": 4
-    },
-    "year": null,
-    "status": "live",
-    "friction": null,
-    "metric": null,
-    "treatment": null,
-    "mobileTreatment": null,
-    "proofLevel": null,
-    "anonymized": false,
-    "fr": {
-      "label": "Automation"
-    }
-  },
-  {
-    "id": "data-engineering",
-    "slug": "data-engineering",
-    "label": "Data Engineering",
-    "type": "capability",
-    "cluster": "data",
-    "weightInputs": {
-      "selfLevel": 3
-    },
-    "year": null,
-    "status": "live",
-    "friction": null,
-    "metric": null,
-    "treatment": null,
-    "mobileTreatment": null,
-    "proofLevel": null,
-    "anonymized": false,
-    "fr": {
-      "label": "Data Engineering"
-    }
-  },
-  {
     "id": "playwright",
     "slug": "playwright",
     "label": "Playwright",
