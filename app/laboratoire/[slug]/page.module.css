@@ -171,3 +171,81 @@
   letter-spacing: 0.1em;
   font-size: var(--step-mono-sm);
 }
+
+/* Pied de page — même vocabulaire que la galerie §08.4 : un filet, un numéro
+   en `--warm-neutral`, le nom en display, une flèche à droite. Le filet est
+   ici en `--line-strong` : c'est une fin de page, pas une séparation de plus
+   entre deux sections de lecture. */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 1.2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-strong);
+}
+
+.footerLabel {
+  color: var(--warm-neutral);
+  letter-spacing: 0.2em;
+}
+
+.next {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.7rem 0;
+}
+
+.nextNumber {
+  color: var(--warm-neutral);
+  letter-spacing: 0.18em;
+}
+
+.nextTitle {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  line-height: 1.1;
+  min-width: 0;
+}
+
+.nextGo {
+  margin-left: auto;
+  color: var(--warm-neutral);
+}
+
+/* Comme la galerie : le survol révèle, il ne déplace rien sous le curseur. */
+.next:hover .nextTitle {
+  text-decoration: underline;
+}
+
+.next:hover .nextGo {
+  color: var(--ink);
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 1.6rem;
+  margin-top: 0.5rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-mid);
+  letter-spacing: 0.12em;
+  font-size: var(--step-mono-sm);
+}
+
+.footerLinks a {
+  text-decoration: none;
+  /* Cible de tap de 44 px (§10.5), obtenue par le padding, pas par la taille
+     du texte — même technique que `.back` en haut de page. */
+  display: inline-block;
+  padding: 0.85rem 0;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}

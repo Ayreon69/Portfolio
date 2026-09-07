@@ -60,6 +60,12 @@ export default async function ProjectPage({
   const project = projectBySlug.get(slug);
   if (!project) notFound();
 
+  // Expérimentation suivante, en boucle sur l'ordre de `projects` — le même
+  // que celui de la galerie §08.4. Cyclique : la dernière page renvoie à la
+  // première, il y a donc toujours une suite, jamais un lien manquant à gérer.
+  const index = projects.findIndex((p) => p.slug === project.slug);
+  const next = projects[(index + 1) % projects.length];
+
   return (
     <article
       className={styles.page}
@@ -188,6 +194,34 @@ export default async function ProjectPage({
           )}
         </section>
       ))}
+
+      {/* La seule sortie après ~3 000 px de lecture. Sans elle, un visiteur
+          arrivé par un moteur de recherche lit la page entière et se retrouve
+          sans issue : ni suite, ni retour, ni contact.
+
+          Trois destinations, une seule dominante — l'expérimentation suivante,
+          parce que c'est ce qu'un lecteur convaincu veut faire ensuite ; la
+          galerie et le contact restent en retrait.
+
+          Aucun `--accent` ici, volontairement : l'accent identifie CETTE page
+          (§03.3), or tout ce bloc pointe ailleurs. Le teinter laisserait croire
+          qu'il appartient à l'expérimentation suivante. */}
+      <nav className={styles.footer} aria-label="Suite de la visite">
+        <p className={`mono ${styles.footerLabel}`}>Expérimentation suivante</p>
+
+        <Link href={`/laboratoire/${next.slug}`} className={styles.next}>
+          <span className={`mono ${styles.nextNumber}`}>{next.number}</span>
+          <span className={styles.nextTitle}>{next.title}</span>
+          <span className={styles.nextGo} aria-hidden="true">
+            →
+          </span>
+        </Link>
+
+        <p className={`mono ${styles.footerLinks}`}>
+          <Link href="/#laboratoire">← Toutes les expérimentations</Link>
+          <Link href="/#contact">Contact →</Link>
+        </p>
+      </nav>
     </article>
   );
 }
