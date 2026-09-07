@@ -127,12 +127,6 @@
   },
   {
     "from": "job-agent",
-    "to": "api-mistral",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "job-agent",
     "to": "github-actions",
     "kind": "uses",
     "weight": 2
@@ -145,7 +139,7 @@
   },
   {
     "from": "job-agent",
-    "to": "ia-llm",
+    "to": "llm",
     "kind": "uses",
     "weight": 3
   },
@@ -199,13 +193,7 @@
   },
   {
     "from": "commission-bot",
-    "to": "api-mistral",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "commission-bot",
-    "to": "ia-llm",
+    "to": "llm",
     "kind": "uses",
     "weight": 2
   },
@@ -223,13 +211,7 @@
   },
   {
     "from": "ai-watch",
-    "to": "api-gemini",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "ai-watch",
-    "to": "ia-llm",
+    "to": "llm",
     "kind": "uses",
     "weight": 2
   },
@@ -253,13 +235,7 @@
   },
   {
     "from": "exp-commissions",
-    "to": "api-mistral",
-    "kind": "uses",
-    "weight": 3
-  },
-  {
-    "from": "exp-commissions",
-    "to": "ia-llm",
+    "to": "llm",
     "kind": "uses",
     "weight": 2
   },

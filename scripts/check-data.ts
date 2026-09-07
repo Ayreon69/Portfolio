@@ -3,8 +3,18 @@
 // Verrouille l'état canonique acté le 2026-09-05 (§04.7), resserré le
 // 2026-09-07 par le retrait complet du ML — pilier, compétences, et le projet
 // Churn Prediction, qui n'avait ni instantané de données ni recul écrit :
-//   dataset source   25 nœuds / 54 arêtes
-//   graphe narratif  23 nœuds / 48 arêtes
+//   dataset source   23 nœuds / 50 arêtes
+//   graphe narratif  21 nœuds / 44 arêtes
+//
+// Retrait du 2026-09-07 (suite) : `api-mistral` et `api-gemini`. Quel
+// fournisseur de LLM sert de moteur est une dépendance technique incidente au
+// sens de §04.7 — elle reste écrite dans la `stack` et la prose des pages
+// projet, elle n'est pas une arête. `api-mistral` avait de surcroît un
+// voisinage strictement inclus dans celui de `llm`, et `api-gemini` un
+// voisinage réduit à un seul projet : les deux cercles ne connectaient rien
+// que `llm` ne connectait déjà. `ia-llm` est renommé `llm` (« IA / LLM » →
+// « LLM ») : « IA » et « LLM » dans le même intitulé disaient deux fois la
+// même chose.
 //
 // Si l'un de ces nombres bouge sans décision explicite, le build doit crier.
 
@@ -56,12 +66,12 @@ function check(label: string, actual: unknown, expected: unknown) {
 }
 
 console.log("\n— Dataset source (data/*.json, inchangé) —");
-check("nœuds source", sourceNodes.length, 25);
-check("arêtes source", sourceEdges.length, 54);
+check("nœuds source", sourceNodes.length, 23);
+check("arêtes source", sourceEdges.length, 50);
 
 console.log("\n— Graphe narratif (dérivé, canonique) —");
-check("nœuds narratifs", narrativeGraph.nodes.length, 23);
-check("arêtes narratives", narrativeGraph.edges.length, 48);
+check("nœuds narratifs", narrativeGraph.nodes.length, 21);
+check("arêtes narratives", narrativeGraph.edges.length, 44);
 check(
   "BUILD absent",
   narrativeGraph.nodes.some((n) => n.id === "build"),
@@ -325,7 +335,7 @@ check(
   "compétences dérivées des arêtes `uses`, poids décroissant",
   experiences.map((x) => x.capabilities.map((c) => `${c.label} ${c.weight}`)),
   [
-    ["Python 3", "API Mistral 3", "IA / LLM 2"],
+    ["Python 3", "LLM 2"],
     ["Python 3", "SAS 3", "Automation 2", "Data Engineering 2"],
   ]
 );
@@ -346,7 +356,7 @@ check(
   "compétences partagées avec le laboratoire",
   experiences.map((x) => x.sharedWith.map((p) => `${p.slug} ${p.shared}`)),
   [
-    ["job-agent 3", "commission-bot 3", "ai-watch 2", "aram-stats 1"],
+    ["job-agent 2", "commission-bot 2", "ai-watch 2", "aram-stats 1"],
     ["job-agent 3", "aram-stats 3", "ai-watch 3", "commission-bot 1"],
   ]
 );

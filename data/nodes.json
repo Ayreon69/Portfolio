@@ -326,9 +326,9 @@
     }
   },
   {
-    "id": "ia-llm",
-    "slug": "ia-llm",
-    "label": "IA / LLM",
+    "id": "llm",
+    "slug": "llm",
+    "label": "LLM",
     "type": "capability",
     "cluster": "ai",
     "weightInputs": {
@@ -343,7 +343,7 @@
     "proofLevel": null,
     "anonymized": false,
     "fr": {
-      "label": "IA / LLM"
+      "label": "LLM"
     }
   },
   {
@@ -482,24 +482,6 @@
     }
   },
   {
-    "id": "api-mistral",
-    "slug": "api-mistral",
-    "label": "API Mistral",
-    "type": "capability",
-    "cluster": "ai",
-    "year": null,
-    "status": "live",
-    "friction": null,
-    "metric": null,
-    "treatment": null,
-    "mobileTreatment": null,
-    "proofLevel": null,
-    "anonymized": false,
-    "fr": {
-      "label": "API Mistral"
-    }
-  },
-  {
     "id": "github-actions",
     "slug": "github-actions",
     "label": "GitHub Actions",
@@ -515,24 +497,6 @@
     "anonymized": false,
     "fr": {
       "label": "GitHub Actions"
-    }
-  },
-  {
-    "id": "api-gemini",
-    "slug": "api-gemini",
-    "label": "API Gemini",
-    "type": "capability",
-    "cluster": "ai",
-    "year": null,
-    "status": "live",
-    "friction": null,
-    "metric": null,
-    "treatment": null,
-    "mobileTreatment": null,
-    "proofLevel": null,
-    "anonymized": false,
-    "fr": {
-      "label": "API Gemini"
     }
   },
   {
