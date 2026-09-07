@@ -28,7 +28,7 @@ const plexSans = IBM_Plex_Sans({
 
 
 export const metadata: Metadata = {
-  title: "Rayan Jemai — Data Scientist · AI Builder · Data",
+  title: "Rayan Jemai — Data Scientist · AI Builder",
   description:
     "Portfolio construit comme un système : projets, compétences et expériences reliés par leurs dépendances réelles.",
 };

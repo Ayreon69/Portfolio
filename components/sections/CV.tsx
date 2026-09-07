@@ -24,7 +24,7 @@ export default function CV() {
         CV
       </h2>
 
-      <p className={`mono ${styles.roles}`}>Data Scientist · AI Builder · Data</p>
+      <p className={`mono ${styles.roles}`}>Data Scientist · AI Builder</p>
 
       <p className={styles.context}>
         Le portfolio est l&apos;expérience. Le CV est le résumé exportable de

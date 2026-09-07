@@ -1,6 +1,6 @@
 # Portfolio — Rayan Jemai
 
-**Data Scientist · AI Builder · Data**
+**Data Scientist · AI Builder**
 
 Portfolio personnel construit comme un système plutôt qu'une vitrine : le site
 ne dit pas « regardez comme je sais faire du web », il montre ce qui a été

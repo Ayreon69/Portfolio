@@ -23,16 +23,16 @@ import styles from "./Parcours.module.css";
  * depuis data/edges.json (voir lib/parcours/derive.ts).
  */
 
-// Intitulé du poste — celui du CV (« Data Analyst / Data Scientist »), et non
+// Intitulé du poste — celui du CV (« Data Scientist »), et non
 // celui du wireframe §08.5 (« Data Scientist / Études actuarielles ») :
 // décision de Rayan du 2026-09-06. Le positionnement public du site est
-// `Data Scientist · AI Builder · Data`, et l'assurance n'y apparaît que comme
+// `Data Scientist · AI Builder`, et l'assurance n'y apparaît que comme
 // contexte d'une expérience — jamais comme spécialisation. Deux effets : plus
 // aucune mention d'études actuarielles sur le site, et plus de divergence
 // entre cette ligne et le CV téléchargeable. L'employeur vient des données
 // (`universe`). L'ancienneté est celle actée en A-08 : en poste depuis
 // septembre 2022, « afficher 4 ANS ».
-const ROLE = "Data Analyst / Data Scientist";
+const ROLE = "Data Scientist";
 const SENIORITY = "4 ans";
 
 export default function Parcours() {

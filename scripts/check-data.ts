@@ -252,8 +252,8 @@ check(
   channels.map((c) => c.href.startsWith("mailto:") || c.href.startsWith("https://")),
   [true, true, true]
 );
-// Positionnement public (décision du 2026-09-06) : `Data Scientist · AI Builder
-// · Data`. L'assurance ne peut apparaître que comme CONTEXTE d'un projet ou
+// Positionnement public (décision du 2026-09-06, resserré le 2026-09-07) :
+// `Data Scientist · AI Builder`. L'assurance ne peut apparaître que comme CONTEXTE d'un projet ou
 // d'une expérience — jamais comme spécialisation. Ce contrôle garde la porte
 // fermée sur le vocabulaire actuariel, retiré du site.
 check(
