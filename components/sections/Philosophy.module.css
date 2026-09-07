@@ -72,7 +72,14 @@
   transform: translateX(-50%);
   /* Le fond crème coupe le filet : le glyphe est POSÉ sur la ligne. */
   background: var(--cream);
-  color: var(--warm-neutral);
+  /* `--warm-neutral` ne donnait que 3,44:1 sur le crème — sous le seuil AA.
+     Le glyphe est `aria-hidden`, donc formellement exempté, mais c'est le
+     SEUL signe visible que la boucle se referme : les filets, eux, ne disent
+     que « ça continue ». `--ink-mid` le porte à 6,71:1 sans élargir la
+     palette (c'est déjà la couleur de l'eyebrow et de la signature). Le
+     crochet reste en `--line` : la structure a le droit d'être discrète,
+     pas le signe qui porte l'information. */
+  color: var(--ink-mid);
   font-size: 0.9rem;
   line-height: 1;
   padding: 0.15rem 0;

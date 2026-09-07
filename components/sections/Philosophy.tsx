@@ -44,9 +44,15 @@ export default function Philosophy() {
       </h2>
 
       <div className={styles.loopFrame}>
+        {/* Le libellé ne dit QUE ce que les éléments visibles ne peuvent pas
+            dire : le fait que la liste se referme. Y répéter les cinq termes
+            les ferait énoncer deux fois de suite par un lecteur d'écran —
+            le libellé d'abord, puis les <li> — soit exactement le doublon
+            qu'on a supprimé entre le HERO et cette section, mais dans la
+            couche que personne ne relit. */}
         <ol
           className={styles.loop}
-          aria-label="Boucle : friction, comprendre, construire, automatiser, itérer, puis retour à la friction"
+          aria-label="Boucle du processus : la dernière étape ramène à la première"
         >
           {STEPS.map((step, i) => (
             <li key={step} className={styles.step}>
