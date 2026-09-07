@@ -17,7 +17,7 @@ export default function CV() {
   return (
     <section id="cv" aria-labelledby="cv-titre" className={styles.section}>
       <p className={`mono ${styles.eyebrow}`}>
-        <span aria-hidden="true">06 — </span>CV
+        <span aria-hidden="true">05 — </span>CV
       </p>
 
       <h2 id="cv-titre" className={styles.title}>

@@ -5,8 +5,8 @@ import styles from "./Philosophy.module.css";
  *
  * Les trois phrases ci-dessous sont celles du blueprint, non réécrites, et
  * chacune a un rôle distinct :
- *   - le fil rouge (« Je n'aime pas faire deux fois la même chose ») vit déjà
- *     dans le HERO — il n'est PAS répété ici ;
+ *   - le fil rouge (« Je n'aime pas faire deux fois la même chose ») vit dans
+ *     le HERO, et y est bien présent — il n'est PAS répété ici ;
  *   - le sous-titre explicatif en est la suite logique, donc le titre de cette
  *     section ;
  *   - la signature professionnelle la referme.
@@ -36,7 +36,7 @@ export default function Philosophy() {
       className={styles.section}
     >
       <p className={`mono ${styles.eyebrow}`}>
-        <span aria-hidden="true">02 — </span>Philosophie
+        <span aria-hidden="true">01 — </span>Philosophie
       </p>
 
       <h2 id="philosophie-titre" className={styles.title}>

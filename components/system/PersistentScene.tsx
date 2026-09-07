@@ -9,16 +9,17 @@ import type { DNAEdge, DNANode } from "@/lib/data-dna/types";
 /**
  * Présence visuelle du système dans le HERO.
  *
- * `false` depuis le 2026-09-07 : le HERO est passé à une direction éditoriale
- * typographique, sans aucune présence 3D. Toute l'infrastructure reste en
- * place et fonctionnelle — canvas persistant, `layout-3d.ts`, prototypes A
- * (`DataSculpture`) et B (`LivingInfrastructure`), halo d'origine
- * (`HeroHalo`) — pour que le retour en arrière soit ce seul drapeau.
+ * Ce drapeau ne choisit plus QUE le système soit actif ou non : c'est
+ * `SYSTEM_VISIBLE` dans `SystemLayer.tsx` qui décide si ce composant est rendu
+ * du tout — et donc si `three.js` est téléchargé. Celui-ci ne choisit plus que
+ * le CONTENU de la scène une fois qu'elle est montée. Les deux repassent à
+ * `true` ensemble pour revenir en arrière.
  *
- * Le canvas reste monté : c'est lui qui garantit la persistance entre routes
- * (§07.1), et il ne dessine simplement plus rien.
+ * Toute l'infrastructure reste en place et fonctionnelle — canvas persistant,
+ * `layout-3d.ts`, prototypes A (`DataSculpture`) et B
+ * (`LivingInfrastructure`), halo d'origine (`HeroHalo`).
  */
-const HERO_SYSTEM_VISIBLE = false;
+const HERO_SYSTEM_VISIBLE = true;
 
 /**
  * Le canvas persistant — pattern validé §07.1.

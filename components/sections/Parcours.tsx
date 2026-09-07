@@ -45,7 +45,7 @@ export default function Parcours() {
       className={styles.section}
     >
       <p className={`mono ${styles.eyebrow}`}>
-        <span aria-hidden="true">05 — </span>Parcours
+        <span aria-hidden="true">04 — </span>Parcours
       </p>
 
       <h2 id="parcours-titre" className={styles.title}>

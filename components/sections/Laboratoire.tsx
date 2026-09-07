@@ -25,7 +25,7 @@ export default function Laboratoire() {
       className={styles.section}
     >
       <p className={`mono ${styles.eyebrow}`}>
-        <span aria-hidden="true">04 — </span>Laboratoire
+        <span aria-hidden="true">03 — </span>Laboratoire
       </p>
 
       <h2 id="laboratoire-titre" className={styles.title}>

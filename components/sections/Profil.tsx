@@ -19,7 +19,7 @@ export default function Profil() {
   return (
     <section id="profil" aria-labelledby="profil-titre" className={styles.section}>
       <p className={`mono ${styles.eyebrow}`}>
-        <span aria-hidden="true">03 — </span>Profil
+        <span aria-hidden="true">02 — </span>Profil
       </p>
 
       <h2 id="profil-titre" className={styles.title}>

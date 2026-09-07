@@ -21,7 +21,7 @@ export default function Contact() {
     >
       <div className={styles.inner}>
         <p className={`mono ${styles.eyebrow}`}>
-          <span aria-hidden="true">07 — </span>Contact
+          <span aria-hidden="true">06 — </span>Contact
         </p>
 
         <h2 id="contact-titre" className={styles.title}>
