@@ -242,8 +242,8 @@
     "status": "archived",
     "friction": "Une trentaine de programmes de production tournaient sous SAS — coût de licence pour toute l'équipe, lenteur et fiabilité en retrait.",
     "metric": {
-      "value": "50 000 €/an",
-      "label": "économie de licences SAS"
+      "value": "2 semaines",
+      "label": "au lieu de plusieurs mois, sans régression"
     },
     "treatment": "editorial",
     "mobileTreatment": "editorial",
@@ -255,8 +255,8 @@
       "title": "Migration SAS → Python",
       "subtitle": "ECA Assurances",
       "friction": "Une trentaine de programmes de production sous SAS, coûteux et peu fiables.",
-      "system": "Migration vers Python sur la préconisation de Rayan — décision stratégique autant qu'exécution.",
-      "result": "Économie de plus de 50 000€/an sur les licences, fiabilité et rapidité accrues.",
+      "system": "Migration vers Python sur la préconisation de Rayan, menée par un système d'agents qui traduit chaque programme et contrôle ses sorties contre l'original.",
+      "result": "Une trentaine de programmes migrés en deux semaines, sans régression, là où un recodage manuel aurait pris des mois — et plus de 50 000€/an d'économie sur les licences.",
       "construction": null,
       "donnees": null,
       "recul": null
