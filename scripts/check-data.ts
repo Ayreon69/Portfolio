@@ -375,6 +375,27 @@ check(
   experiences.every((x) => !!x.friction && !!x.system && !!x.metric && !!x.result),
   true
 );
+// PARCOURS affiche `metric.value` en grand PUIS `result` juste dessous. Si le
+// second contient le premier, la page écrit deux fois le même chiffre à deux
+// centimètres d'écart — c'est ce qui s'est produit sur `exp-commissions`
+// (« +70% » suivi de « +70% de vitesse de réponse… »).
+//
+// Le contrôle équivalent existait pour les pages projet (« 05 Résultat — ne
+// redit pas le badge ») mais pas ici : c'est cette asymétrie qui a laissé
+// passer le doublon. Comparaison insensible aux espaces insécables, sans quoi
+// « 50 000 €/an » écrit avec des espaces normaux dans le texte échapperait au
+// contrôle.
+const sansInsecables = (s: string) => s.replace(/ /g, " ");
+check(
+  "Parcours — le résultat ne redit pas le grand chiffre",
+  experiences.every(
+    (x) =>
+      !sansInsecables(x.result ?? "").includes(
+        sansInsecables(x.metric?.value ?? "@@")
+      )
+  ),
+  true
+);
 check(
   "compétences partagées avec le laboratoire",
   experiences.map((x) => x.sharedWith.map((p) => `${p.slug} ${p.shared}`)),
