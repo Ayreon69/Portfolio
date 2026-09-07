@@ -479,7 +479,14 @@ AUTOMATION      Suppression des allers-retours humains pour une question à rép
 DATA            Identique à Commission Bot : script Python métier + paramétrage
                 Excel, anonymisés avant tout appel API.
 TECHNOLOGIES    Python · Gradio · API Mistral · pandas
-RÉSULTAT        +70 % de vitesse de réponse, erreurs quasi nulles.
+RÉSULTAT        Une réponse immédiate à une question sur le commissionnement, sans
+                passer par Rayan. Le système explique les règles réelles et ne calcule
+                jamais : il ne peut donc pas inventer un montant.
+                ⚠ Retiré le 2026-09-09 : « +70 % de vitesse de réponse, erreurs quasi
+                nulles ». Aucune instrumentation n'existait avant ni après — le chiffre
+                était une estimation, pas une mesure. Cette expérience n'a donc PAS de
+                métrique affichée, et l'asymétrie avec la migration SAS (50 000 €/an,
+                chiffre réel) est une information, pas un manque à combler.
 PREUVE          case-study uniquement — aucun code montré (cohérent avec Commission
                 Bot, §04.4.03 : dépôt privé, données employeur non anonymisées à la
                 source).

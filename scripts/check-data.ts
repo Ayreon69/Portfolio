@@ -371,9 +371,30 @@ check(
   ]
 );
 check(
-  "chaque expérience a friction, système, métrique et résultat",
-  experiences.every((x) => !!x.friction && !!x.system && !!x.metric && !!x.result),
+  "chaque expérience a friction, système et résultat",
+  experiences.every((x) => !!x.friction && !!x.system && !!x.result),
   true
+);
+// La métrique n'est PAS obligatoire, et c'est le fond du sujet : elle n'existe
+// que là où un chiffre a réellement été mesuré.
+//
+// `exp-commissions` en portait un — « +70 % de vitesse de réponse » — qui ne
+// venait d'aucune mesure : aucune instrumentation n'existait avant ni après.
+// Retiré le 2026-09-09. Un chiffre invérifiable coûte plus qu'il ne rapporte :
+// il ne survit pas à la question « comment l'as-tu mesuré ? » en entretien, et
+// il fait douter du chiffre voisin, qui lui est réel (coût de licences SAS).
+// C'est la même règle que pour le graphe : jamais d'arête inventée « par
+// cohérence supposée » — jamais de chiffre inventé non plus.
+//
+// Ce contrôle fige l'état attendu pour empêcher qu'une estimation revienne
+// s'installer dans le bloc du grand chiffre.
+check(
+  "métrique présente uniquement là où elle est mesurée",
+  experiences.map((x) => [x.id, !!x.metric]),
+  [
+    ["exp-commissions", false],
+    ["exp-sas-python", true],
+  ]
 );
 // PARCOURS affiche `metric.value` en grand PUIS `result` juste dessous. Si le
 // second contient le premier, la page écrit deux fois le même chiffre à deux

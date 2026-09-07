@@ -211,10 +211,7 @@
     "year": 2025,
     "status": "live",
     "friction": "Seul expert de l'entreprise sur les règles de commissionnement — toute question passait par lui, consommant du temps des deux côtés.",
-    "metric": {
-      "value": "+70%",
-      "label": "vitesse de réponse, erreurs quasi nulles"
-    },
+    "metric": null,
     "treatment": "editorial",
     "mobileTreatment": "editorial",
     "proofLevel": "case-study",
@@ -226,7 +223,7 @@
       "subtitle": "ECA Assurances",
       "friction": "Seul expert des règles de commissionnement, toute question passait par lui.",
       "system": "Le même système que Commission Bot, construit et utilisé en conditions réelles dans l'entreprise.",
-      "result": "Vitesse de réponse aux questions de commissionnement, erreurs quasi nulles.",
+      "result": "Une réponse immédiate à une question sur le commissionnement, sans passer par moi. Le système explique les règles réelles et ne calcule jamais : il ne peut donc pas inventer un montant.",
       "construction": null,
       "donnees": null,
       "recul": null
