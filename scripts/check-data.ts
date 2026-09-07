@@ -3,8 +3,8 @@
 // Verrouille l'état canonique acté le 2026-09-05 (§04.7), resserré le
 // 2026-09-07 par le retrait complet du ML — pilier, compétences, et le projet
 // Churn Prediction, qui n'avait ni instantané de données ni recul écrit :
-//   dataset source   21 nœuds / 42 arêtes
-//   graphe narratif  19 nœuds / 36 arêtes
+//   dataset source   21 nœuds / 45 arêtes
+//   graphe narratif  19 nœuds / 39 arêtes
 //
 // Retrait du 2026-09-07 (suite) : `api-mistral` et `api-gemini`. Quel
 // fournisseur de LLM sert de moteur est une dépendance technique incidente au
@@ -28,6 +28,16 @@
 // CONSERVÉS : ils nomment un outil et une technique, pas le domaine, et la
 // coïncidence y est un fait vrai (tous les projets IA sont des projets LLM ;
 // Python est dans les 6 systèmes) — c'est l'insight, pas la redondance.
+//
+// AJOUT du 2026-09-07 — le seul de la journée, et il corrige une omission,
+// il n'enrichit pas : la grille §04.4.04 (Migration SAS → Python) portait
+// « AI — Aucune. », ce qui était faux. La migration a été menée par un système
+// d'agents qui lit le SAS, le traduit, puis compare les sorties à l'original
+// pour garantir l'absence de régression — deux semaines au lieu de plusieurs
+// mois de recodage manuel. Trois arêtes réelles manquaient donc au graphe :
+// `pillar-ai` (feeds 2), `llm` (uses 3), `agentic-ai` (uses 3).
+// Conséquence : `agentic-ai` cesse d'être un satellite à un seul voisin — le
+// même geste (construire un agent) relie désormais Job Agent et la migration.
 //
 // Si l'un de ces nombres bouge sans décision explicite, le build doit crier.
 
@@ -80,11 +90,11 @@ function check(label: string, actual: unknown, expected: unknown) {
 
 console.log("\n— Dataset source (data/*.json, inchangé) —");
 check("nœuds source", sourceNodes.length, 21);
-check("arêtes source", sourceEdges.length, 42);
+check("arêtes source", sourceEdges.length, 45);
 
 console.log("\n— Graphe narratif (dérivé, canonique) —");
 check("nœuds narratifs", narrativeGraph.nodes.length, 19);
-check("arêtes narratives", narrativeGraph.edges.length, 36);
+check("arêtes narratives", narrativeGraph.edges.length, 39);
 check(
   "BUILD absent",
   narrativeGraph.nodes.some((n) => n.id === "build"),
@@ -349,7 +359,7 @@ check(
   experiences.map((x) => x.capabilities.map((c) => `${c.label} ${c.weight}`)),
   [
     ["Python 3", "LLM 2"],
-    ["Python 3", "SAS 3"],
+    ["Python 3", "LLM 3", "Agentic AI 3", "SAS 3"],
   ]
 );
 check(
@@ -357,7 +367,7 @@ check(
   experiences.map((x) => x.pillars),
   [
     ["AI", "AUTOMATION"],
-    ["AUTOMATION", "DATA"],
+    ["AUTOMATION", "DATA", "AI"],
   ]
 );
 check(
@@ -370,7 +380,7 @@ check(
   experiences.map((x) => x.sharedWith.map((p) => `${p.slug} ${p.shared}`)),
   [
     ["job-agent 2", "commission-bot 2", "ai-watch 2", "aram-stats 1"],
-    ["job-agent 1", "aram-stats 1", "commission-bot 1", "ai-watch 1"],
+    ["job-agent 3", "commission-bot 2", "ai-watch 2", "aram-stats 1"],
   ]
 );
 check(

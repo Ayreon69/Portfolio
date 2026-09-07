@@ -493,7 +493,17 @@ FRICTION        Une trentaine de programmes de production tournaient sous SAS �
                 par rapport à une alternative moderne.
 SYSTÈME         Migration de ces programmes vers Python, sur la préconisation de
                 Rayan — décision stratégique autant que travail d'exécution.
-AI              Aucune.
+                Reprendre et recoder chaque programme à la main aurait pris des
+                MOIS : la migration a été menée par un système d'agents, cadré
+                par des règles spécifiques pour qu'aucun programme ne régresse.
+AI              Système d'agents de migration : lecture des programmes SAS,
+                traduction en Python, puis analyse comparée des sorties pour
+                garantir l'absence de régression. Les agents ne traduisent pas
+                seulement — ils contrôlent leur propre résultat contre
+                l'original, sous des règles écrites pour ça. Corrigé le
+                2026-09-07 : cette grille portait « AI — Aucune. », ce qui a
+                privé le graphe de trois arêtes réelles (`pillar-ai` feeds 2,
+                `llm` uses 3, `agentic-ai` uses 3).
 ML              Aucune.
 AUTOMATION      Remplacement d'un outil propriétaire par une stack scriptable et
                 automatisable, sur une trentaine de programmes de production.
@@ -502,7 +512,9 @@ DATA            Programmes de traitement de données de production (contexte
                 à ce stade.
 TECHNOLOGIES    SAS → Python (stack Python précise non détaillée à ce stade)
 RÉSULTAT        Économie de plus de 50 000 €/an sur les licences SAS de l'équipe,
-                fiabilité et rapidité accrues des programmes migrés.
+                fiabilité et rapidité accrues des programmes migrés. Migration
+                menée en DEUX SEMAINES là où un recodage manuel programme par
+                programme aurait pris des mois — sans régression.
 PREUVE          case-study uniquement — aucun code montré.
 ```
 

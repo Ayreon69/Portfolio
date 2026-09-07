@@ -18,6 +18,7 @@ export const experienceActions: Record<string, string[]> = {
   "exp-sas-python": [
     "Une trentaine de programmes de production tournaient sous SAS : une licence pour toute l'équipe, de la lenteur, et une fiabilité en retrait par rapport à une alternative moderne.",
     "J'ai préconisé la migration vers Python, puis je l'ai menée — la décision stratégique autant que le travail d'exécution.",
+    "Reprendre les programmes un par un et les recoder à la main aurait pris des mois. J'ai construit un système d'agents qui lit le programme SAS, le traduit, puis compare ses sorties à celles de l'original — avec des règles écrites pour qu'aucun programme ne régresse. Deux semaines au lieu de plusieurs mois.",
   ],
 };
 

@@ -90,6 +90,12 @@
     "weight": 2
   },
   {
+    "from": "exp-sas-python",
+    "to": "pillar-ai",
+    "kind": "feeds",
+    "weight": 2
+  },
+  {
     "from": "job-agent",
     "to": "python",
     "kind": "uses",
@@ -212,6 +218,18 @@
   {
     "from": "exp-sas-python",
     "to": "sas",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "llm",
+    "kind": "uses",
+    "weight": 3
+  },
+  {
+    "from": "exp-sas-python",
+    "to": "agentic-ai",
     "kind": "uses",
     "weight": 3
   },
