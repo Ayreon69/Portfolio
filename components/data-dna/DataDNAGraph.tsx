@@ -149,6 +149,20 @@ export default function DataDNAGraph({
               .map((n) => {
                 const r = nodeRadius(n);
                 const hollow = n.type === "pillar" || n.type === "output";
+                // Deux familles de formes : QUADRILATÈRE = ce qui a été
+                // construit (expérimentation posée, expérience sur la pointe —
+                // le même carré, deux variantes) ; CERCLE = ce avec quoi on
+                // construit (compétence pleine, pilier creux et cerclé fort).
+                //
+                // Avant ce partage, expérimentation et compétence étaient deux
+                // cercles pleins que seul le rayon séparait — et les rayons se
+                // chevauchent : Python (compétence, r 12,0) est plus gros que
+                // ARAM Stats (r 11,5) et Commission Bot (r 10,2). La taille
+                // n'affirmait donc pas une distinction, elle en suggérait une
+                // fausse. Séparer les familles rend aussi la taille lisible :
+                // on compare les cercles entre eux et les quadrilatères entre
+                // eux, ce qui est la seule comparaison qui ait un sens.
+                const quad = n.type === "experiment" || n.type === "experience";
                 const shape = {
                   className: hollow
                     ? n.type === "pillar"
@@ -180,20 +194,30 @@ export default function DataDNAGraph({
                       <circle
                         cx={n.x}
                         cy={n.y}
-                        r={r + 7}
+                        /* Un carré de demi-côté r a ses angles à r√2 : sans
+                           cette correction, l'anneau raserait les coins des
+                           plus gros systèmes. L'écart reste de 7 px dans les
+                           deux familles. */
+                        r={(quad ? r * Math.SQRT2 : r) + 7}
                         className={styles.activeRing}
                       />
                     )}
-                    {/* Expérience professionnelle = losange. Distinction de
-                        forme, pas de couleur : « vécu en entreprise » vs
-                        « construit en propre » doit se lire d'un coup d'œil. */}
-                    {n.type === "experience" ? (
+                    {/* Distinction de forme, jamais de couleur : elle tient en
+                        niveaux de gris et pour un daltonien. L'expérience
+                        professionnelle est le carré du système, tourné de 45° —
+                        « vécu en entreprise » vs « construit en propre » se lit
+                        alors comme une déclinaison, pas comme un autre objet. */}
+                    {quad ? (
                       <rect
                         x={n.x - r}
                         y={n.y - r}
                         width={r * 2}
                         height={r * 2}
-                        transform={`rotate(45 ${n.x} ${n.y})`}
+                        transform={
+                          n.type === "experience"
+                            ? `rotate(45 ${n.x} ${n.y})`
+                            : undefined
+                        }
                         {...shape}
                       />
                     ) : (
