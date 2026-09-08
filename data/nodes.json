@@ -116,7 +116,7 @@
     "cluster": "data",
     "year": 2026,
     "status": "live",
-    "friction": "Riot bloque volontairement l'accès aux données de la file ARAM : Mayhem (match-v5 renvoie 403 sur la queue 2400) — impossible de savoir quels champions, augments et objets dominent réellement ce mode.",
+    "friction": "Riot bloque volontairement l'accès aux données de la file ARAM : Mayhem (match-v5 renvoie 403 sur la queue 2400). Impossible de savoir quels champions, augments et objets dominent réellement ce mode.",
     "metric": {
       "value": "150 140",
       "label": "parties collectées"
@@ -132,7 +132,7 @@
     "fr": {
       "title": "ARAM Stats",
       "subtitle": "Statistiques du mode ARAM : Mayhem",
-      "friction": "Riot bloque volontairement l'accès aux données de la file ARAM : Mayhem — impossible de savoir quels champions/augments/objets dominent réellement.",
+      "friction": "Riot bloque volontairement l'accès aux données de la file ARAM : Mayhem. Impossible de savoir quels champions/augments/objets dominent réellement.",
       "system": "Crawler en boule de neige sur l'API locale du client League (LCU), stockage SQLite, deux interfaces de restitution (explorateur local + site public au filtrage 100% navigateur).",
       "result": "150 140 parties, 1,5M lignes joueur, filtrage/agrégation de 1,5M lignes en 11 à 37ms dans le navigateur.",
       "construction": null,
@@ -148,7 +148,7 @@
     "cluster": "ai",
     "year": 2026,
     "status": "live",
-    "friction": "Comprendre et calculer les commissions d'assurance (précompte, linéaire) demande de naviguer un script métier complexe et un fichier de paramétrage Excel — expertise concentrée chez peu de personnes, difficile à transmettre.",
+    "friction": "Comprendre et calculer les commissions d'assurance (précompte, linéaire) demande de naviguer un script métier complexe et un fichier de paramétrage Excel. L'expertise est concentrée chez peu de personnes et difficile à transmettre.",
     "metric": {
       "value": "~22 000",
       "label": "tokens de base de connaissance"
@@ -210,7 +210,7 @@
     "cluster": "ai",
     "year": 2025,
     "status": "live",
-    "friction": "Seul expert de l'entreprise sur les règles de commissionnement — toute question passait par lui, consommant du temps des deux côtés.",
+    "friction": "Seul expert de l'entreprise sur les règles de commissionnement. Toute question passait par lui, consommant du temps des deux côtés.",
     "metric": null,
     "treatment": "editorial",
     "mobileTreatment": "editorial",
@@ -237,7 +237,7 @@
     "cluster": "automation",
     "year": 2026,
     "status": "archived",
-    "friction": "Une trentaine de programmes de production tournaient sous SAS — coût de licence pour toute l'équipe, lenteur et fiabilité en retrait.",
+    "friction": "Une trentaine de programmes de production tournaient sous SAS, avec un coût de licence pour toute l'équipe, de la lenteur et une fiabilité en retrait.",
     "metric": {
       "value": "50 000 €/an",
       "label": "économisés sur les licences SAS"

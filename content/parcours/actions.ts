@@ -12,13 +12,13 @@
  */
 export const experienceActions: Record<string, string[]> = {
   "exp-commissions": [
-    "J'étais le seul dans l'entreprise à maîtriser les règles de commissionnement — mode, règles, taux. Toute question, de n'importe qui, passait par moi, et consommait du temps des deux côtés.",
+    "J'étais le seul dans l'entreprise à maîtriser les règles de commissionnement (mode, règles, taux). Toute question, de n'importe qui, passait par moi, et consommait du temps des deux côtés.",
     "J'ai construit et utilisé en conditions réelles le système qui existe aussi en version laboratoire sous le nom de Commission Bot, pour que la réponse à une question déterministe ne dépende plus de ma disponibilité.",
   ],
   "exp-sas-python": [
     "Une trentaine de programmes de production tournaient sous SAS : une licence pour toute l'équipe, de la lenteur, et une fiabilité en retrait par rapport à une alternative moderne.",
-    "J'ai préconisé la migration vers Python, puis je l'ai menée — la décision stratégique autant que le travail d'exécution.",
-    "Reprendre les programmes un par un et les recoder à la main aurait pris des mois. J'ai construit un système d'agents qui lit le programme SAS, le traduit, puis compare ses sorties à celles de l'original — avec des règles écrites pour qu'aucun programme ne régresse. Deux semaines au lieu de plusieurs mois.",
+    "J'ai préconisé la migration vers Python, puis je l'ai menée. La décision stratégique autant que le travail d'exécution.",
+    "Reprendre les programmes un par un et les recoder à la main aurait pris des mois. J'ai construit un système d'agents qui lit le programme SAS, le traduit, puis compare ses sorties à celles de l'original, avec des règles écrites pour qu'aucun programme ne régresse. Deux semaines au lieu de plusieurs mois.",
   ],
 };
 

@@ -23,7 +23,7 @@ const jobAgent: ProjectContent = {
   construction: {
     paragraphs: [
       "Un pipeline multi-agents qui va du scraping jusqu'à une analyse rédigée : collecte des offres sur Hellowork et jobup.ch, indexation RAG du profil candidat, agent de scoring, agent de génération d'analyse structurée, puis une API et un dashboard de tri manuel.",
-      "Ce qui le sépare d'un script, c'est l'orchestrateur : il prend de vraies décisions — re-scraping ciblé, statut « incertain » assumé, gestion explicite des échecs — au lieu d'enchaîner les étapes sans condition.",
+      "Un script enchaîne des étapes sans condition. L'orchestrateur décide. Il relance un scraping ciblé, assume un statut « incertain », gère explicitement ses échecs.",
       "Un garde-fou n'est pas négociable : aucune soumission automatique de candidature. Le pipeline s'arrête à l'analyse, et la validation humaine reste le seul chemin vers une action externe.",
     ],
   },
@@ -32,7 +32,7 @@ const jobAgent: ProjectContent = {
     // §09.3 — la chaîne telle qu'elle est écrite dans le blueprint.
     chain: ["JOB SOURCES", "[ AGENT · AGENT · AGENT ]", "FILTER", "MATCH", "OUTPUT"],
     paragraphs: [
-      "Le RAG est écrit à la main, sans LangChain : embeddings multilingues locaux via sentence-transformers, indexation vectorielle dans ChromaDB, et une recherche par atome de compétence — pas par exigence composite — avec un seuil de bruit calculé dynamiquement.",
+      "Le RAG est écrit à la main, sans LangChain. Embeddings multilingues locaux via sentence-transformers, indexation vectorielle dans ChromaDB, seuil de bruit calculé dynamiquement. La recherche porte sur l'atome de compétence, pas sur l'exigence composite.",
       "Le scoring combine trois régimes volontairement distincts : la géographie est traitée en déterministe, hors du RAG ; le rapprochement de compétences passe par la recherche sémantique ; l'arbitrage final revient à un agent LLM (API Mistral), qui extrait aussi les exigences de l'offre et rédige l'analyse structurée.",
       "L'ensemble tourne seul : scraping programmé par cron quotidien sur GitHub Actions, pipeline de bout en bout sans intervention jusqu'à l'analyse, nettoyage automatique des offres obsolètes, persistance par commit CI.",
     ],
@@ -40,7 +40,7 @@ const jobAgent: ProjectContent = {
 
   donnees: {
     paragraphs: [
-      "107 offres scorées — 73 sur Hellowork, 34 sur jobup.ch — dans un schéma SQLite tenu par des migrations explicites.",
+      "107 offres scorées (73 sur Hellowork, 34 sur jobup.ch), dans un schéma SQLite tenu par des migrations explicites.",
       "Chaque offre porte trois niveaux de trace JSON. N'importe quelle décision du pipeline peut être rouverte et auditée a posteriori, étape par étape.",
     ],
     stack: [
@@ -59,7 +59,7 @@ const jobAgent: ProjectContent = {
 
   result: {
     paragraphs: [
-      "Le résultat le plus intéressant n'est pas le volume : la granularité atomique du RAG détecte des gaps de compétence qu'une recherche composite manque silencieusement. Vérifié sur un cas réel — une offre exigeant la norme ISO 13485.",
+      "Le résultat le plus intéressant n'est pas le volume : la granularité atomique du RAG détecte des gaps de compétence qu'une recherche composite manque silencieusement. Vérifié sur une offre réelle, qui exigeait la norme ISO 13485.",
       "Le système est honnête par construction : il ne fabrique jamais une compétence, et signale un manque explicitement plutôt que de le masquer dans un score global.",
     ],
   },
