@@ -74,9 +74,9 @@ export default function JobAgentUniverse() {
       <p className={styles.lead}>
         Une même offre, deux granularités de la même mesure. En composite,
         chaque exigence est confrontée au profil en un bloc. En atomique,
-        elle est éclatée en ses composants réels avant d&apos;être confrontée
-        un par un — ouvrez n&apos;importe quelle ligne pour voir sa
-        décomposition, que le bouton ci-dessous soit utilisé ou non.
+        elle est éclatée en ses composants avant d&apos;être confrontée un par
+        un. Ouvrez n&apos;importe quelle ligne pour voir sa décomposition, que
+        le bouton ci-dessous soit utilisé ou non.
       </p>
 
       <p className={`mono ${styles.snapshot}`}>

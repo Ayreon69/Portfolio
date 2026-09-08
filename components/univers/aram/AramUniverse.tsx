@@ -194,7 +194,7 @@ export default function AramUniverse({ children }: { children: React.ReactNode }
         {children}
         {failed && (
           <p className={`mono ${styles.note}`}>
-            Instantané indisponible — le classement ci-dessus reste celui de
+            Instantané indisponible. Le classement ci-dessus reste celui de
             l&apos;export.
           </p>
         )}
@@ -223,14 +223,14 @@ export default function AramUniverse({ children }: { children: React.ReactNode }
       <p className={styles.lead}>
         Ces trois filtres n&apos;interrogent aucun serveur : ils relancent le
         calcul dans votre navigateur, sur des colonnes binaires téléchargées
-        une fois. Le compteur sous le graphique dit ce que cette passe a
-        réellement coûté, ici et maintenant.
+        une fois. Le compteur sous le graphique dit ce que cette passe vient de
+        coûter.
       </p>
       <p className={`mono ${styles.snapshot}`}>
         Instantané du patch {data.labels.patch} ·{" "}
         {data.labels.games.toLocaleString("fr-FR")} parties · export du{" "}
         {data.labels.exportedAt} ·{" "}
-        {snapshotRows.toLocaleString("fr-FR")} lignes d&apos;agrégats — une
+        {snapshotRows.toLocaleString("fr-FR")} lignes d&apos;agrégats. Une
         tranche réduite servie à cette page, pas les 1,5 million de lignes du
         site public.
       </p>
@@ -280,7 +280,7 @@ export default function AramUniverse({ children }: { children: React.ReactNode }
         ref={canvasRef}
         className={styles.canvas}
         role="img"
-        aria-label={`Taux de victoire en fonction de l'échantillon — ${
+        aria-label={`Taux de victoire en fonction de l'échantillon. ${
           result.matched
         } lignes, dont ${decidableCount} tranchables. Le tableau ci-dessous porte les mêmes données.`}
       />

@@ -43,8 +43,8 @@ export default function AiWatchUniverse() {
     <div className={styles.wrapper}>
       <p className={styles.lead}>
         Les 34 sources déclarées de la veille, classées deux fois sur les mêmes
-        nombres : par volume collecté, puis par rendement réel — la part de ce
-        volume jugée utile. Rien n&apos;est recalculé au changement de tri, le
+        nombres : par volume collecté, puis par rendement (la part de ce volume
+        jugée utile). Rien n&apos;est recalculé au changement de tri, le
         classement se contente de se relire dans l&apos;autre sens.
       </p>
 
@@ -117,7 +117,7 @@ export default function AiWatchUniverse() {
         <strong>{data.totaux.utiles.toLocaleString("fr-FR")}</strong> jugés
         utiles. Les sept sources coupées au rendement représentaient{" "}
         <strong>{data.sous_ensemble_coupe.items}</strong> de ces items pour{" "}
-        <strong>{data.sous_ensemble_coupe.utiles}</strong> utiles —{" "}
+        <strong>{data.sous_ensemble_coupe.utiles}</strong> utiles.{" "}
         {data.meta.sources_presentes} des {data.meta.sources_declarees} sources
         déclarées ont produit au moins un item sur la fenêtre,{" "}
         {data.meta.sources_sans_item} n&apos;en ont produit aucun.

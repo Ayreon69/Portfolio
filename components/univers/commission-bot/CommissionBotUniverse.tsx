@@ -63,8 +63,8 @@ export default function CommissionBotUniverse() {
   return (
     <div className={styles.wrapper}>
       <p className={styles.lead}>
-        22 000 tokens de documentation sur une fenêtre de 128 000 — 17 % de la
-        limite théorique. Mais l&apos;attention du modèle se dégrade avant
+        22 000 tokens de documentation sur une fenêtre de 128 000, soit 17 % de
+        la limite théorique. Mais l&apos;attention du modèle se dégrade avant
         cette limite, autour de 40 000 à 60 000 tokens sur un contexte dense
         en tableaux et en code. Le contrôle ci-dessous projette une
         documentation plus volumineuse pour voir où elle tombe.
@@ -161,7 +161,7 @@ export default function CommissionBotUniverse() {
 
       <p className={`mono ${styles.readout}`} aria-live="polite">
         ×{mult} documentation : <strong>{projected.toLocaleString("fr-FR")}</strong>{" "}
-        tokens — <strong>{pourcentage.toFixed(0)} %</strong> de la limite du
+        tokens, soit <strong>{pourcentage.toFixed(0)} %</strong> de la limite du
         modèle,{" "}
         {dansZone
           ? "dans la zone où l'attention du modèle se dégrade déjà"
@@ -173,19 +173,20 @@ export default function CommissionBotUniverse() {
 
       <p className={styles.projectionNote}>
         {mult === 1
-          ? `${DOC_TOKENS.toLocaleString("fr-FR")} tokens est la seule valeur mesurée ici — le volume réel de la documentation actuelle (${(RATIO_ACTUEL * 100).toFixed(0)} % de la limite du modèle).`
-          : `×${mult} est une projection arithmétique de ${DOC_TOKENS.toLocaleString("fr-FR")} tokens, pas un volume observé — aucune documentation de cette taille n'existe aujourd'hui.`}
+          ? `${DOC_TOKENS.toLocaleString("fr-FR")} tokens est le volume de la documentation actuelle (${(RATIO_ACTUEL * 100).toFixed(0)} % de la limite du modèle), et la seule valeur mesurée ici.`
+          : `×${mult} est une projection arithmétique des ${DOC_TOKENS.toLocaleString("fr-FR")} tokens mesurés. Aucune documentation de cette taille n'existe aujourd'hui.`}
       </p>
 
       <p className={styles.narrative}>
         Doubler la documentation double le coût et la latence de chaque
-        question, sans gain de qualité — un mauvais rendement, pas seulement
-        un plafond. Ni l&apos;un ni l&apos;autre ne se mesure aujourd&apos;hui :
-        aucune métrique d&apos;usage n&apos;existe pour ce bot. La vraie limite
-        n&apos;est donc pas 128 000 tokens : c&apos;est le jour où une seconde
-        source hétérogène s&apos;ajoute, ou où le volume triple — au-delà, la
-        maintenance manuelle du dictionnaire d&apos;anonymisation et du résumé
-        métier casse avant que le modèle ne sature.
+        question sans rien gagner en qualité. On paie deux fois pour le même
+        résultat, sans même avoir approché le plafond théorique. Ni le coût ni
+        la qualité ne sont mesurés aujourd&apos;hui, faute de métrique
+        d&apos;usage sur ce bot. Et la limite qui arrivera d&apos;abord
+        n&apos;est pas celle du modèle. Le jour où une seconde source
+        hétérogène s&apos;ajoute, ou où le volume triple, la maintenance
+        manuelle du dictionnaire d&apos;anonymisation et du résumé métier lâche
+        pendant que le contexte, lui, tient encore.
       </p>
     </div>
   );
